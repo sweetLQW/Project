@@ -1,0 +1,34 @@
+.boxlist{
+    height:70px;
+}
+.list{
+    list-style: none;
+    float: left;
+    height: 40px;
+    margin-top: -45px;
+    margin-left: 90px;
+    line-height: 40px;
+    text-align: center;
+}
+.list li{
+    float: left;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid black;
+}
+h3{
+    display: block;
+    width: 100px;
+    color: red;
+}
+.list li h3{
+    display: block;
+    width: 130px;
+    height: 20px;
+    color: black;
+    margin-top: 15px;
+    line-height: 10px;
+    text-align: center;
+}

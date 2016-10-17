@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	link(rel="stylesheet" href="style/layout.css")
+body
+	div.boxlist
+		h3 欢迎#{username}
+		ul.list
+			li
+				h3	系统列表
+			li
+				a(href="http://localhost:3000/students") 学生列表
+			li
+				a(href="http://localhost:3000/users") 用户列表
+	block content
+
+	

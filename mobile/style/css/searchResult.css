@@ -1,0 +1,422 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.clear {
+  clear: both;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 0.88rem;
+  background-color: #50bbdb;
+  position: relative;
+  z-index: 10;
+}
+.header img {
+  width: 0.28rem;
+  height: 0.54rem;
+  position: absolute;
+  top: 0.17rem;
+  left: 0.19rem;
+}
+.header span {
+  color: #ffffff;
+}
+.header .s-top {
+  font-size: 0.28rem;
+  position: absolute;
+  top: 0.19rem;
+  left: 2.23rem;
+}
+.header .s-bottom {
+  font-size: 0.18rem;
+  position: absolute;
+  top: 0.55rem;
+  left: 2.78rem;
+}
+.header .cir {
+  position: absolute;
+  top: 0.40rem;
+  right: 0.13rem;
+}
+.header .cir .circle {
+  width: 0.12rem;
+  height: 0.12rem;
+  float: left;
+  background-color: white;
+  border-radius: 0.12rem;
+  margin-left: 0.08rem;
+}
+.nav {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  position: absolute;
+  z-index: 1;
+}
+.nav .info1,
+.nav .info2,
+.nav .info3,
+.nav .info4 {
+  width: 100%;
+  height: 1.68rem;
+  margin-top: 0.03rem;
+  background-color: #ffffff;
+}
+.nav .info1 .info1-left,
+.nav .info2 .info1-left,
+.nav .info3 .info1-left,
+.nav .info4 .info1-left {
+  float: left;
+  width: 1.80rem;
+  height: 1.68rem;
+}
+.nav .info1 .info1-left img,
+.nav .info2 .info1-left img,
+.nav .info3 .info1-left img,
+.nav .info4 .info1-left img {
+  width: 100%;
+  height: 100%;
+}
+.nav .info1 .info1-left .opa,
+.nav .info2 .info1-left .opa,
+.nav .info3 .info1-left .opa,
+.nav .info4 .info1-left .opa,
+.nav .info1 .info1-left .opa1,
+.nav .info2 .info1-left .opa1,
+.nav .info3 .info1-left .opa1,
+.nav .info4 .info1-left .opa1,
+.nav .info1 .info1-left .opa2,
+.nav .info2 .info1-left .opa2,
+.nav .info3 .info1-left .opa2,
+.nav .info4 .info1-left .opa2,
+.nav .info1 .info1-left .opa3,
+.nav .info2 .info1-left .opa3,
+.nav .info3 .info1-left .opa3,
+.nav .info4 .info1-left .opa3 {
+  width: 1.80rem;
+  height: 0.31rem;
+  background-color: black;
+  opacity: 0.3;
+  font-size: 0.20rem;
+  color: white;
+  text-align: center;
+}
+.nav .info1 .info1-left .opa,
+.nav .info2 .info1-left .opa,
+.nav .info3 .info1-left .opa,
+.nav .info4 .info1-left .opa {
+  position: absolute;
+  top: 1.4rem;
+  z-index: 30;
+}
+.nav .info1 .info1-left .opa1,
+.nav .info2 .info1-left .opa1,
+.nav .info3 .info1-left .opa1,
+.nav .info4 .info1-left .opa1 {
+  position: absolute;
+  top: 3.3rem;
+  z-index: 30;
+}
+.nav .info1 .info1-left .opa2,
+.nav .info2 .info1-left .opa2,
+.nav .info3 .info1-left .opa2,
+.nav .info4 .info1-left .opa2 {
+  position: absolute;
+  top: 5.1rem;
+  z-index: 30;
+}
+.nav .info1 .info1-left .opa3,
+.nav .info2 .info1-left .opa3,
+.nav .info3 .info1-left .opa3,
+.nav .info4 .info1-left .opa3 {
+  position: absolute;
+  top: 6.95rem;
+  z-index: 30;
+}
+.nav .info1 .info1-right,
+.nav .info2 .info1-right,
+.nav .info3 .info1-right,
+.nav .info4 .info1-right {
+  width: 4.5rem;
+  float: left;
+}
+.nav .info1 .info1-right .title,
+.nav .info2 .info1-right .title,
+.nav .info3 .info1-right .title,
+.nav .info4 .info1-right .title,
+.nav .info1 .info1-right .road,
+.nav .info2 .info1-right .road,
+.nav .info3 .info1-right .road,
+.nav .info4 .info1-right .road,
+.nav .info1 .info1-right .describe,
+.nav .info2 .info1-right .describe,
+.nav .info3 .info1-right .describe,
+.nav .info4 .info1-right .describe,
+.nav .info1 .info1-right .bottom,
+.nav .info2 .info1-right .bottom,
+.nav .info3 .info1-right .bottom,
+.nav .info4 .info1-right .bottom {
+  margin-left: 0.14rem;
+}
+.nav .info1 .info1-right .title,
+.nav .info2 .info1-right .title,
+.nav .info3 .info1-right .title,
+.nav .info4 .info1-right .title {
+  font-size: 0.24rem;
+  margin-top: 0.13rem;
+}
+.nav .info1 .info1-right .road,
+.nav .info2 .info1-right .road,
+.nav .info3 .info1-right .road,
+.nav .info4 .info1-right .road {
+  font-size: 0.24rem;
+  margin-top: 0.17rem;
+}
+.nav .info1 .info1-right .describe,
+.nav .info2 .info1-right .describe,
+.nav .info3 .info1-right .describe,
+.nav .info4 .info1-right .describe {
+  font-size: 0.2rem;
+  margin-top: 0.17rem;
+  color: #999999;
+}
+.nav .info1 .info1-right .bottom,
+.nav .info2 .info1-right .bottom,
+.nav .info3 .info1-right .bottom,
+.nav .info4 .info1-right .bottom {
+  height: 0.37rem;
+  position: relative;
+  margin-top: 0.05rem;
+}
+.nav .info1 .info1-right .bottom img,
+.nav .info2 .info1-right .bottom img,
+.nav .info3 .info1-right .bottom img,
+.nav .info4 .info1-right .bottom img {
+  float: left;
+  width: 0.29rem;
+  height: 0.37rem;
+  position: absolute;
+}
+.nav .info1 .info1-right .bottom .stand,
+.nav .info2 .info1-right .bottom .stand,
+.nav .info3 .info1-right .bottom .stand,
+.nav .info4 .info1-right .bottom .stand {
+  float: left;
+  margin-left: 0.36rem;
+  font-size: 0.18rem;
+  line-height: 0.37rem;
+  color: #333333;
+}
+.nav .info1 .info1-right .bottom .money,
+.nav .info2 .info1-right .bottom .money,
+.nav .info3 .info1-right .bottom .money,
+.nav .info4 .info1-right .bottom .money {
+  float: right;
+  margin-right: 0.28rem;
+  font-size: 0.28rem;
+  color: #ea561d;
+}
+.nav .info2,
+.nav .info3,
+.nav .info4 {
+  margin-top: 0.17rem;
+}
+.footer {
+  height: 0.98rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  border-top: 1px solid #f1f1f1;
+  background-color: white;
+}
+.footer .f-left,
+.footer .f-center1,
+.footer .f-center2,
+.footer .f-right {
+  width: 25%;
+  height: 0.98rem;
+  float: left;
+}
+.footer .f-left img,
+.footer .f-center1 img,
+.footer .f-center2 img,
+.footer .f-right img {
+  width: 0.51rem;
+  height: 0.51rem;
+  margin-top: 0.07rem;
+  margin-left: 0.38rem;
+  position: absolute;
+}
+.footer .f-left h1,
+.footer .f-center1 h1,
+.footer .f-center2 h1,
+.footer .f-right h1 {
+  font-size: 0.20rem;
+  margin-top: 0.73rem;
+  margin-left: 0.25rem;
+}
+.module,
+.module1 {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.module .show,
+.module1 .show {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 100;
+}
+.module .content,
+.module1 .content {
+  width: 100%;
+  height: 4.20rem;
+  background-color: white;
+  position: absolute;
+  bottom: 0rem;
+  z-index: 999;
+}
+.module .content .c-top,
+.module1 .content .c-top {
+  width: 100%;
+  height: 0.71rem;
+  float: left;
+  background-color: #50bbdb;
+}
+.module .content .c-top ul,
+.module1 .content .c-top ul {
+  list-style: none;
+}
+.module .content .c-top ul li,
+.module1 .content .c-top ul li {
+  float: left;
+  font-size: 0.24rem;
+  text-align: center;
+  line-height: 0.71rem;
+}
+.module .content .c-top ul .cancel,
+.module1 .content .c-top ul .cancel,
+.module .content .c-top ul .confirm,
+.module1 .content .c-top ul .confirm {
+  width: 25%;
+}
+.module .content .c-top ul .empty,
+.module1 .content .c-top ul .empty {
+  width: 50%;
+}
+.module .content .c-left,
+.module1 .content .c-left {
+  float: left;
+}
+.module .content .c-left ul,
+.module1 .content .c-left ul {
+  width: 1.95rem;
+  list-style: none;
+  font-size: .24rem;
+  height: 3.49rem;
+  background-color: #ebebeb;
+}
+.module .content .c-left ul li,
+.module1 .content .c-left ul li {
+  padding-left: 0.29rem;
+  line-height: 0.68rem;
+  width: 1.95rem;
+  height: 0.68rem;
+}
+.module .content .c-left ul li a,
+.module1 .content .c-left ul li a {
+  text-decoration: none;
+  color: #333333;
+}
+.module .content .c-left ul .color,
+.module1 .content .c-left ul .color {
+  background-color: #ffffff;
+}
+.module .content .c-right,
+.module1 .content .c-right {
+  width: 4.12rem;
+  float: left;
+}
+.module .content .c-right .zero,
+.module1 .content .c-right .zero,
+.module .content .c-right .one,
+.module1 .content .c-right .one,
+.module .content .c-right .two,
+.module1 .content .c-right .two,
+.module .content .c-right .three,
+.module1 .content .c-right .three {
+  display: none;
+}
+.module .content .c-right .zero ul,
+.module1 .content .c-right .zero ul,
+.module .content .c-right .one ul,
+.module1 .content .c-right .one ul,
+.module .content .c-right .two ul,
+.module1 .content .c-right .two ul,
+.module .content .c-right .three ul,
+.module1 .content .c-right .three ul {
+  width: 4.12rem;
+  list-style: none;
+  font-size: .24rem;
+  height: 3.49rem;
+  background-color: #ffffff;
+}
+.module .content .c-right .zero ul li,
+.module1 .content .c-right .zero ul li,
+.module .content .c-right .one ul li,
+.module1 .content .c-right .one ul li,
+.module .content .c-right .two ul li,
+.module1 .content .c-right .two ul li,
+.module .content .c-right .three ul li,
+.module1 .content .c-right .three ul li {
+  line-height: 0.7rem;
+  margin-left: 0.19rem;
+  width: 4.12rem;
+  height: 0.7rem;
+  border-bottom: 0.01rem solid #ebebeb;
+}
+.module .content .c-right .zero ul li p,
+.module1 .content .c-right .zero ul li p,
+.module .content .c-right .one ul li p,
+.module1 .content .c-right .one ul li p,
+.module .content .c-right .two ul li p,
+.module1 .content .c-right .two ul li p,
+.module .content .c-right .three ul li p,
+.module1 .content .c-right .three ul li p {
+  margin-left: 0.59rem;
+  width: 1rem;
+  float: left;
+}
+.module .content .c-right .zero ul li input,
+.module1 .content .c-right .zero ul li input,
+.module .content .c-right .one ul li input,
+.module1 .content .c-right .one ul li input,
+.module .content .c-right .two ul li input,
+.module1 .content .c-right .two ul li input,
+.module .content .c-right .three ul li input,
+.module1 .content .c-right .three ul li input {
+  float: right;
+  margin-top: 0.25rem;
+  margin-right: 0.26rem;
+}
+.module .content .c-right .active,
+.module1 .content .c-right .active {
+  display: block;
+}
+.module .content .c-right .color,
+.module1 .content .c-right .color {
+  background-color: #ffffff;
+}

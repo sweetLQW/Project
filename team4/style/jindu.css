@@ -1,0 +1,44 @@
+.inner{
+	width: 1000px;
+	margin: 0 auto;
+}
+.series{
+	margin-top: 30px;
+	margin-bottom: 17px;
+	color: #666666;
+}
+.series a{
+	font-size: 14px;
+	color: #666666;
+	margin-right: 10px;
+}
+.liucheng{
+	position: relative;
+}
+.liucheng .liucheng_span{
+	width: 1000px;
+	height: 4px;
+	background: #e5e5e5;
+	position: absolute;
+	left: 0;
+	top:23px;
+	z-index: -1;
+}
+.liucheng .liucheng_ul li{
+	z-index: 100;
+	width: 250px;
+	float: left;
+	text-align: center;
+}
+.liucheng .liucheng_ul li p{
+	padding: 16px 0 30px 0;
+	font-size: 15px;
+	color: #999999;
+}
+.liucheng .liucheng_ul li p.liucheng_finish{
+	color: #50bbdb;
+}
+.inner li{
+	color:rgb(55,55,55);
+
+}

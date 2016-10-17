@@ -1,0 +1,231 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.clear {
+  clear: both;
+}
+html,
+body {
+  height: 100%;
+}
+.header {
+  width: 100%;
+  height: 0.88rem;
+  background-color: #50bbdb;
+}
+.header img {
+  width: 0.28rem;
+  height: 0.54rem;
+  position: absolute;
+  top: 0.17rem;
+  left: 0.19rem;
+}
+.header span {
+  font-size: 0.28rem;
+  position: absolute;
+  top: 0.31rem;
+  right: 2.65rem;
+  color: #ffffff;
+}
+.nav .nav-list {
+  list-style: none;
+}
+.nav .nav-list li {
+  float: left;
+  font-size: 0.24rem;
+  width: 50%;
+  height: 0.74rem;
+  text-align: center;
+  line-height: 0.74rem;
+}
+.nav .nav-list li a {
+  color: #333333;
+  text-decoration: none;
+}
+.nav .nav-list li a img {
+  width: 0.14rem;
+  height: 0.08rem;
+}
+.nav .nav-list .border {
+  border-right: 0.01px solid #d2d2d2;
+}
+.footer {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+.footer .info1,
+.footer .info2,
+.footer .info3,
+.footer .info4 {
+  margin-top: 0.14rem;
+  background-color: #ffffff;
+}
+.footer .info1 .top,
+.footer .info2 .top,
+.footer .info3 .top,
+.footer .info4 .top {
+  font-size: 0.18rem;
+  margin: 0 auto;
+  width: 6.06rem;
+  height: 0.35rem;
+  border-bottom: 0.01px dashed #d3d3d3;
+}
+.footer .info1 .top .left,
+.footer .info2 .top .left,
+.footer .info3 .top .left,
+.footer .info4 .top .left,
+.footer .info1 .top .center,
+.footer .info2 .top .center,
+.footer .info3 .top .center,
+.footer .info4 .top .center,
+.footer .info1 .top .right,
+.footer .info2 .top .right,
+.footer .info3 .top .right,
+.footer .info4 .top .right {
+  float: left;
+  color: #d3d3d3;
+  margin-top: 0.07rem;
+}
+.footer .info1 .top .left,
+.footer .info2 .top .left,
+.footer .info3 .top .left,
+.footer .info4 .top .left {
+  width: 1.75rem;
+  height: 0.19rem;
+  border-right: 0.01px solid #d3d3d3;
+}
+.footer .info1 .top .center,
+.footer .info2 .top .center,
+.footer .info3 .top .center,
+.footer .info4 .top .center {
+  width: 0.89rem;
+  height: 0.19rem;
+}
+.footer .info1 .top .center p,
+.footer .info2 .top .center p,
+.footer .info3 .top .center p,
+.footer .info4 .top .center p {
+  float: right;
+}
+.footer .info1 .top .right,
+.footer .info2 .top .right,
+.footer .info3 .top .right,
+.footer .info4 .top .right {
+  width: 3.40rem;
+  height: 0.19rem;
+}
+.footer .info1 .top .right p,
+.footer .info2 .top .right p,
+.footer .info3 .top .right p,
+.footer .info4 .top .right p {
+  float: right;
+}
+.footer .center {
+  width: 6.06rem;
+  height: 0.96rem;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+}
+.footer .center .c-top {
+  margin-top: 0.15rem;
+}
+.footer .center .c-top h1 {
+  font-size: 0.24rem;
+}
+.footer .center .c-bottom p {
+  font-size: 0.18rem;
+  margin-top: 0.26rem;
+}
+.footer .center .c-bottom .date {
+  margin-left: 0.28rem;
+}
+.footer .center .c-bottom .money {
+  font-size: 0.20rem;
+  color: #ea561d;
+  margin-left: 0.87rem;
+}
+.footer .bottom {
+  width: 100%;
+  height: 0.56rem;
+  border: 1px solid #ffffff;
+  border-top: 0.01px solid #d3d3d3;
+}
+.footer .bottom .inbox {
+  width: 6.06rem;
+  height: 0.56rem;
+  margin: 0 auto;
+}
+.footer .bottom .inbox h1 {
+  font-size: 0.24rem;
+  width: 1rem;
+  line-height: 0.56rem;
+  float: left;
+  color: #ea561d;
+}
+.footer .bottom .inbox #list {
+  font-size: 0.24rem;
+  float: right;
+  margin-top: 0.10rem;
+}
+.footer .show,
+.footer .show1 {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+}
+.footer .show .box,
+.footer .show1 .box {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 10;
+}
+.footer .show .content,
+.footer .show1 .content {
+  background-color: white;
+  position: absolute;
+  z-index: 100;
+  height: 0.74rem;
+  width: 100%;
+}
+.footer .show .content img,
+.footer .show1 .content img {
+  width: 0.23rem;
+  height: 0.14rem;
+  position: absolute;
+  top: -0.11rem;
+  right: 1.64rem;
+  z-index: 999;
+}
+.footer .show .content ul,
+.footer .show1 .content ul {
+  list-style: none;
+  background-color: white;
+}
+.footer .show .content ul li,
+.footer .show1 .content ul li {
+  height: 0.74rem;
+  width: 100%;
+  font-size: 0.24rem;
+  line-height: 0.74rem;
+  border-top: 0.01px solid #aaaaaa;
+}
+.footer .show .content ul li a,
+.footer .show1 .content ul li a {
+  color: #666666;
+  text-decoration: none;
+}
+.footer .show1 img {
+  position: absolute;
+  top: -0.11rem;
+  left: 1.64rem;
+}

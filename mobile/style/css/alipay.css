@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.header {
+  width: 100%;
+  height: 0.88rem;
+  background-color: #50bbdb;
+}
+.header img {
+  width: 0.28rem;
+  height: 0.54rem;
+  position: absolute;
+  top: 0.17rem;
+  left: 0.19rem;
+}
+.header span {
+  font-size: 0.28rem;
+  position: absolute;
+  top: 0.31rem;
+  right: 2.65rem;
+  color: #ffffff;
+}
+.banner {
+  height: 0.97rem;
+  width: 100%;
+}
+.banner p {
+  font-size: 0.28rem;
+  text-align: center;
+  float: left;
+  line-height: 0.97rem;
+  width: 2.20rem;
+  color: #f5b582;
+}
+.banner .money {
+  text-align: left;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  border: 0.01rem solid white;
+  background-color: #ebebeb;
+}
+.container .way {
+  height: 3.21rem;
+  width: 100%;
+  margin-top: 0.27rem;
+  background-color: white;
+}
+.container .way ul {
+  list-style: none;
+  margin-left: 0.52rem;
+}
+.container .way ul li {
+  height: 1.01rem;
+  width: 5.69rem;
+  border-bottom: 0.01rem solid #dcdcdc;
+}
+.container .way ul li img {
+  width: 0.57rem;
+  height: 0.57rem;
+  margin-top: 0.20rem;
+  float: left;
+}
+.container .way ul li h1 {
+  font-size: 0.28rem;
+  float: left;
+  margin-top: 0.36rem;
+}
+.container .way ul li input {
+  float: right;
+  margin-top: 0.34rem;
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+.footer {
+  height: 0.98rem;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0rem;
+}
+.footer h1 {
+  font-size: 0.28rem;
+  color: #f0851a;
+  margin-top: 0.17rem;
+  margin-left: 0.17rem;
+}
+.footer p {
+  font-size: 0.2rem;
+  margin-top: 0.17rem;
+  margin-left: 0.17rem;
+}
+.footer button {
+  float: right;
+  margin-right: 0.26rem;
+  margin-top: -0.7rem;
+  width: 1.86rem;
+  height: 0.66rem;
+  color: white;
+  background-color: #50bbdb;
+}
+.btn1 {
+  background-color: gray;
+}

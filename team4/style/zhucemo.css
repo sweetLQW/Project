@@ -1,0 +1,58 @@
+		.denglulogo{
+			padding-left: 135px;
+			margin-left: 170px;
+			margin-top: 24px;
+		}
+		.shoujilu{
+			width: 72px;
+			cursor: pointer;
+			float: right;
+			color: #50B8D8;
+			font-size: 14px;
+			margin-bottom: 16px;
+			font-family:"微软雅黑";
+		}
+		.input{
+			display: block;
+			width: 352px;
+			height: 48px;
+			margin-left: 70px;
+			border:1px solid #e5e5e5;		
+		}
+		.zhuce{
+			font-size: 14px;
+			color:#7d7d7d;
+			text-align: center;
+			line-height: 44px;
+		}
+		.clear{
+			clear: both;
+		}
+		.psd{
+			width: 362px;
+			height: 44px;
+			margin: 0 auto;
+			margin-left: 70px;
+		}
+		.psd-left{
+			width: 244px;
+			height: 44px;
+			float: left;
+		}
+		.cf{
+			color: #b0b0b0;	
+			display:block;
+			text-decoration:none;
+			float:left;
+		}
+		.xian{
+			width: 134px;
+			height: 13px;
+			border-top:1px solid #50bbdb;
+			margin-top:6px;
+			float:left;
+		}
+		.other{
+			padding: 21px 20px 36px 118px;
+			 
+		}

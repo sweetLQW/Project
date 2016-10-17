@@ -1,0 +1,634 @@
+<a href=""></a><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自驾团填写订单页_1</title>
+	<link href="../style/lysdingdan.css" rel="stylesheet">
+	<link href="../style/dianji.css" rel="stylesheet">
+	<style type="text/css">
+		.bottom {
+			height: 15px;
+			clear: both;
+			padding: 10px 0px;
+			background-color: #444b55;;
+			margin-top: 0px;
+		}
+		.bottom-l {
+			float: left;
+			height: auto;
+			padding-left: 50px;
+			margin: 0 auto;
+			padding-top:0px;
+			border-right:none;
+			width: 990px;
+		}
+		.block1 {
+			width: 195px;float: left;
+		}
+		.block1 a.white{
+			color:#fcffff;
+		}
+		.block1 a:hover{color: #50bbdb; 
+			text-decoration: none;
+		}
+		.foot{
+		height: 40px; 
+		background-color: #565d65;
+		font-size: 16px; 
+		color: #fcffff; 
+		line-height: 40px; 
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="header-up">
+			<div class="inner">
+				<div class="inner-up">
+					<div class="inner-up-left">
+						<div class="up-left">
+							<img src="../images/lysweizhi.jpg" alt="">
+							<div class="lyscity">
+								<p>北京</p>
+								<a href="">切换</a>
+							</div>
+						</div>
+						<div class="up-right">
+							<img src="../images/lysshouji.jpg" alt="">
+							<div class="app">
+								<p>下载手机APP</p>
+							</div>
+						</div>
+					</div>
+					<div class="inner-up-right">
+						<div class="lyspic">
+							<img src="../images/lysqq.jpg" alt="">
+							<img src="../images/lysweibo.jpg" alt="">
+						</div>
+						<div class="lysp">
+							<p><a href=""><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">登录</button></a> | <a href=""><button>注册</button></a></p>
+						</div>		
+					</div>
+				</div>
+				<div class="inner-down">
+					<img src="../images/lyslogo.png" alt="">
+						<div class="menu">
+							<ul>
+								<li><a  class="a1"href="">首页</a></li>
+								<li><a class="a1" href="">目的地</a></li>
+								<li><a class="a2" href="">线路</a></li>
+								<li><a class="a3" href="">定制</a></li>
+								<li><a class="a1" href="L-lead.html" target="_blank">自驾团</a></li>
+								<li><a class="a4" href="">摄影</a></li>
+								<li><a class="a5" href="">互动</a></li>
+								<li><a class="a6" href="">精选</a></li>
+								<li><a class="a7" href="">预定</a></li>
+						</div>
+				</div>
+			</div>
+			<div class="header-down"></div>
+		</div>	
+	</div>
+	<div class="contenner">
+		<div class="route">
+			<div class="series">
+				<div class="breadcrumb">
+					<strong>
+						<a href="#" style="color:#00000">&nbsp;&nbsp;&nbsp;自驾团</a>
+					</strong> 
+					<span>&gt;<a href="#" style="color:#00000">&nbsp;&nbsp;&nbsp;境内</a></span>
+					<span>&gt;<a href="#" style="color:#00000">&nbsp;&nbsp;&nbsp;云南落地自驾行摄之旅</a></span>
+					<span>&gt;<a href="#" style="color:#00000">&nbsp;&nbsp;&nbsp;我要报名</a></span>
+					<span>&gt;<a href="#" style="color:#00000">&nbsp;&nbsp;&nbsp;在线支付</a></span>
+				</div>			
+			</div>
+			<div class="liucheng cf" style="overflow:hidden; 
+	list-style:none;">
+				<span class="liucheng_span"></span>
+				<ul class="liucheng_ul">
+					<li>
+						<img src="../images/duihao.png" alt="">
+						<p class="liucheng_finish">选择路线</p>
+					</li>
+					<li>
+						<img src="../images/lys2.jpg" alt="">
+						<p class="liucheng_finish">填写订单</p>
+					</li>
+					<li>
+						<img src="../images/three.png" alt="">
+						<p class="">在线支付</p>
+					</li>
+					<li>
+						<img src="../images/four.png" alt="">
+						<p>付款成功</p>
+					</li>
+				</ul>
+			</div>
+		<div class="message">
+			<div class="message-left">
+				<div class="message-up">
+					<div class="message-p">
+						<p>线路信息</p>
+					</div>
+					<div class="xiugai">
+						<a href="wyy.html" target="_blank"><input class="img" type="button"></a>
+					</div>
+				<div class="message-down">
+					<div class="list">
+						<div class="list1">
+							<ul>
+								<li>线路名称 :</li>
+								<li>出游日期<span>*</span> :</li>
+								<li>成人<span>*</span> :</li>
+								<li>儿童 :</li>
+								<li>房间<span>*</span> :</li>
+							</ul>
+						</div>
+						<div class="list2">	
+							<ul>
+								<li>[北京出发]<span>经奢自驾八人小团：云南落地自驾行摄7日之旅</span></li>
+								<li>2016-01-17</li>
+								<li>1 x ￥5280 </li>
+					 			<li>0  x ￥5280</li>
+								<li><input class="input1" type="button" value="-"><input class="math" type="text" value="1"><input class="input2" type="button" value="+"> &nbsp;(2人间)</li>
+								<script src="../javascript/jquery.js"></script>
+								<script>
+									$(".input1").click(function(){
+										var  num = Number($(".math").val());
+										if(num > 0){
+											$(".math").val(--num);
+											$(".box .box1 .center .left .fang").val(num);
+										}
+
+									});
+
+									$(".input2").click(function(){
+										var  num = Number($(".math").val());
+										$(".math").val(++num);
+										$(".box .box1 .center .left .fang").val(num);
+									});
+								</script>
+									
+							</ul>
+						</div>
+					</div>
+					<div class="list3">
+						<div class="p">
+							<p>是否同意拼房<span>*</span> :</p>
+						</div>
+						<div class="btn">
+							<ul>
+								<li><input type="radio" id="pay_radio4" name="payment" value="4" class="regular-radio">
+								<label for="pay_radio4" style=""></label>同意拼房</li>
+								<li><input type="radio" id="pay_radio5" name="payment" value="8" class="regular-radio">
+								<label for="pay_radio5"></label>不同意拼房,愿意支付<span>房差费用￥3500</span></li>
+								<script>
+									$("#pay_radio5 ").click(function(){
+											var  num = Number($(".box .box4 .center .p2 .span").text());
+											$(".box .box4 .center .p2 .span").text(8900);
+									})
+								</script>
+							</ul>
+						</div>
+					</div>
+					<div class="clear"></div>	
+				</div>
+			</div>		
+			</div>
+			<div class="message-right">
+				<div class="box">
+					<div class="up">
+						<div class="center">
+							<p>订单详情</p>
+						</div>
+					</div>
+					<div class="box1">
+						<div class="center">
+							<div class="left">
+								<ul>
+									<p>成人</p>
+									<p class="p">房间&nbsp;x
+									<input class="fang" type="text" value="1"></input></p>
+								</ul>
+							</div>
+							<div class="right">
+								<p>1 X ￥5280</p>
+							</div>
+						</div>
+					</div>
+					<div class="box2">
+						<div class="center">
+							<div class="p1">
+								<p>意外旅游险</p>
+							</div>
+							<div class="p2">
+								<p>1 x ￥120</p>
+							</div>
+						</div>
+					</div>
+					<div class="box3">
+						<div class="center">
+							<div class="p1">
+								<p>优惠金额</p>
+							</div>
+							<div class="p2">
+								<p> -￥0</p>
+							</div>
+						</div>
+					</div>
+					<div class="box4">
+						<div class="center">
+							<div class="p1">
+								<p>总计</p>
+							</div>
+							<div class="p2">
+								<span>￥</span><span class="span">5400</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				var height=$(window).height();  
+		        $(window).scroll(function(){  
+		            if ($(window).scrollTop()>height){  
+		                $(".message-right").css("position","fixed").css("top","50px").css("left","942px") 
+		            }else{  
+		               $(".message-right").css("position","null").css("position","absolute").css("top","310px").css("left","942px")
+		            } 
+		        });
+			</script>
+			<div class="clear"></div>
+		</div>
+		<div class="expense">
+			<div class="expense-up">
+				<ul class="tab">
+					<li>费用包含</li>
+					<li>退该规则</li>
+				</ul>
+			</div>
+			<script>
+				$(".tab li").click(function(){
+					var index = $(this).index();
+					$(".expense-down .list ul").eq(index).addClass("bao").siblings().removeClass("bao");
+				})
+	</script>
+			<div class="expense-down">
+				
+				<div class="list">
+					<ul class="bao">
+						<h5 class="h">费用包含</h5>
+						<li>*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；</li>
+						<li>*+国内往返美国经济舱机票、燃油附加税、机票税；</li>
+						<li>*+包含好莱坞环球影城+17英里海岸门票；</li>
+						<li>*+美国当地钻酒店住宿；</li>
+						<span class="link">阅读更多</span>
+						<div class="inner-box">
+							<textarea class="boxes" name="" id="" cols="30" rows="10">
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+							</textarea>
+						</div>
+						<script src="../javascript/jquery.js"></script>
+						<script>
+							$(".inner-box").hide()
+							$(".link").click(function(){
+								$(".inner-box").fadeToggle(500);
+							})
+						</script>
+					</ul>
+					<ul>
+						<h5 class="h">退该规则</h5>
+						<li>*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；</li>
+						<li>*+国内往返美国经济舱机票、燃油附加税、机票税；</li>
+						<li>*+美国当地钻酒店住宿；</li>
+						<li>*+美国当地钻酒店住宿；</li>
+						<span class="link1">阅读更多</span>
+						<div class="inner-box1">
+							<textarea class="boxes" name="" id="" cols="30" rows="10">
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+*+7x24小时优秀中/英双语自驾向导服务（国内出发，全程陪同）；
+*+国内往返美国经济舱机票、燃油附加税、机票税；
+*+美国当地钻酒店住宿；
+*+美国当地钻酒店住宿；
+							</textarea>
+						</div>
+						<script src="../javascript/jquery.js"></script>
+						<script>
+							$(".inner-box1").hide()
+							$(".link1").click(function(){
+								$(".inner-box1").fadeToggle(500);
+							})
+						</script>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="person">
+			<div class="person-up">
+				<div class="p">
+					<p>联系人信息</p>
+				</div>	
+			</div>
+			<div class="person-down">
+				<div class="left">
+					<ul>
+						<li>姓名<span>*</span></li>
+						<li>性别</li>
+						<li>手机号码<span>*</span></li>
+						<li>邮箱<span>*</span></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li><input type="text" placeholder=" &nbsp;请输入姓名" ></li>
+						<li class="sex"><input type="radio" checked="checked" name="Sex" value="male" /> &nbsp;男<input class="gril" type="radio" name="Sex" value="female" /> &nbsp;女</li>
+						<li><input class="tel" type="text" placeholder=" &nbsp;请输入手机号码"><span class="panduan"></span></li>
+						<li><input class="mail" type="text" placeholder=" &nbsp;请输入邮箱"><span class="panduan1"></span></li>
+					</ul>
+					<script src="../javascript/jquery.js"></script>
+					<script>
+					$(".tel").blur(function(){
+						var tel = /^1[3|4|5|7|8]\d{9}$/;
+						var result = tel.test($(".tel").val());
+						console.log(result);
+						if(result){
+							$(".panduan").text("输入成功").removeClass("red").addClass("green")
+						}else{
+							$(".panduan").text("请重新输入11位手机号").removeClass("green").addClass("red")
+						}
+					})
+					//邮箱验证
+					$(".mail").blur(function(){
+						var re = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
+						var txt = $(this).val();
+						var result = re.test(txt);	
+						console.log(result)
+						if(result){
+							$(".panduan1").text("成功").removeClass("red").addClass("green")
+						}else{
+							$(".panduan1").text("请重新输入邮箱").removeClass("green").addClass("red")
+						}
+					})
+					</script>
+		
+				</div>
+			</div>
+		</div>
+		<div class="visitors">
+			<div class="visitors-up">
+				<div class="p">
+					<p>游客信息</p>
+				</div>
+				<div class="p1">
+					<div class="btn">
+						<p>常用游客</p>
+					</div>
+				</div>
+			</div>
+			<div class="visitors-up1">
+				<p>游客1</p>
+			</div>
+			<div class="center">
+				<div class="left">
+					<ul>
+						<li>游客类型</li>
+						<li>姓名<span>*</span></li>
+						<li>性别</li>
+						<li>手机号码</li>
+						<li>证件<span>*</span></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li clas="sex"><input class="men" type="radio" checked="checked" name="Sex" value="male" /> &nbsp;成人<input class="child" type="radio" name="Sex" value="female" /> &nbsp;儿童</li>
+						<li>
+							<select name="" id="" placeholder="">
+								<option value="1" color="cccccc">英文</option>
+								<option value="2" selected="ture">中文</option>
+							</select>&nbsp;&nbsp;<input type="text"  placeholder=" &nbsp;请输入姓名">
+						</li>
+						<li><input class="man" type="radio" checked="checked" name="Sex" value="male" /> &nbsp;男<input class="gril" type="radio" name="Sex" value="female" /> &nbsp;女</li>
+						<li><input class="tell" type="text" placeholder=" &nbsp;请输入手机号码"><span class="panduan2"></span></li>
+						<script src="../javascript/jquery.js"></script>
+						<script>
+						$(".tell").blur(function(){
+						var tell = /^[0-9]{11}$/;
+						var re1 = tell.test($(".tell").val());
+						console.log(re1);
+						if(re1){
+							$(".panduan2").text("输入成功").removeClass("red").addClass("green")
+						}else{
+							$(".panduan2").text("请重新输入11位手机号").removeClass("green").addClass("red")
+						}
+					})
+					</script>
+						<li>
+							<select name="" id="" placeholder="">
+									<option value="1" color="cccccc">护照</option>
+									<option value="2" selected="ture">身份证</option>
+							</select>&nbsp;&nbsp;
+							<input class="card" type="text"  placeholder=" &nbsp;证件号码"><span class="panduan3"></span>
+							<script src="../javascript/jquery.js"></script>
+							<script>
+								$(".card").blur(function(){
+									var card = /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{4}$/;
+									var num = card.test($(".card").val());
+									console.log(num);
+									if(num){
+										$(".panduan3").text("输入成功").removeClass("red").addClass("green")
+									}else{
+										$(".panduan3").text("请重新输入正确的身份证号").removeClass("green").addClass("red")
+									}
+							})
+							</script>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="btn">
+					<p>+ 添加游客</p>
+				</div>
+			</div>
+		</div>
+		<div class="safest">
+			<div class="safest-1">
+				<div class="safest-up">
+					<div class="p">
+						<p>保险</p>
+					</div>
+				</div>
+				<div class="safest-up1">
+					<div class="xingqing">
+						<p><a href="">详情></a></p>
+					</div>
+				</div>
+			</div>		
+			<div class="safest-down">
+				<div class="center">
+					<div class="center1">
+						<p><input type="checkbox">平安爱自驾境外长线保险</p>
+						<p>经典型2份</p>
+						<p class="span"><span >￥177</span>/一份</p>
+					</div>
+					<div class="center2">
+						<p><input type="checkbox">平安爱自驾境外长线保险</p>
+						<p>经典型2份</p>
+						<p class="span"><span >￥177</span>/一份</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="proceed">
+			<div class="proceed-up">
+				<div class="p">
+					<p>预订信息</p>
+				</div>
+			</div>
+			<div class="center">
+				<div class="left">
+					<ul>
+						<li>发票信息 :</li>
+						<li>发票抬头 :</li>
+						<li>发票明细 :</li>
+						<li>配送地址 :</li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul>
+						<li><p>是否需要发展 ：</p><input class="yes" type="radio" checked="checked" name="Sex" value="male" /> &nbsp;<lable class="y">是</lable><input class="no" type="radio" name="Sex" value="female" /> &nbsp;<lable class="n">否</lable></li>
+						<li><input type="text" placeholder=" &nbsp;请输入发票抬头"></li>
+						<li><select name="" id="">
+								<option value="1" color="cccccc">护照</option>
+								<option value="2" selected="ture">会议费</option>
+							</select></li>
+						<li><input type="text" placeholder=" &nbsp;请输入配送地址"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="center">
+					<a href=""><p>更多要求>></p></a>
+				</div>
+			</div>
+		</div>
+		<div class="count">
+			<p>总价：1 x ￥5280 + 1 x ￥120 + 1 x ￥170 = <span>￥5570</span></p>
+		</div>
+		<div class="tijiao">
+			<div class="center">
+				<div class="up">
+					<input class="radio" type="checkbox" name="car" />已阅读爱自驾条款，并同意
+				</div>
+				<div class="down">
+					<button class="img"></button>
+				</div>	
+			</div>
+		</div>
+		<script type="text/javascript" src="../javascript/s-jquery.js"></script>
+			<script>
+				$("input").click(function(){
+					$(this).attr("checked","checked");
+				})
+				$("button").click(function(){
+					var input=$(".tijiao .center .up input").attr("checked")
+					if(input==undefined){
+						alert("请勾选同意按钮")
+					}else{
+						location.href="pay.html"
+					}
+				})
+
+			</script>
+	</div>
+	<link href="footer.css" rel="stylesheet" type="text.css">
+	<div class="bottom">
+		<div class="center boxcenter">
+			<div class="bottom-l" style="margin: 0 auto;">
+				<div class="block1" style="text-align:center;">
+					<a href="#" class="white">人民交通出版社</a>
+				</div>
+				<div class="block1" style="text-align:center;">
+					<a href="#" class="white">爱自驾</a>
+				</div>
+				<div class="block1" style="text-align:center;">
+					<a href="#" class="white">联系我们</a>
+				</div>
+                <div class="block1" style="text-align:center;">
+					<a href="#" class="white">友情链接</a>
+				</div>
+                <div class="block1" style="text-align:center;">
+					<a href="#" class="white">爱自驾品牌店</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="foot">人民交通出版社股份有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 京ICP备15018898号-1</div>
+</body>
+</html>

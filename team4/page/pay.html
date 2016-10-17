@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<title>在线支付</title>
+	<link rel="stylesheet" href="../style/jindu.css">
+	<link rel="stylesheet" href="../style/dianji.css">
+	<link rel="stylesheet" href="../style/heade.css">
+	<style>
+		*{
+			margin:0; padding:0; 
+			text-decoration:none; 
+			font-family:"微软雅黑";
+		}
+		div, span, p, a, img, dl, dt, dd, ul, li {
+			overflow:display;
+		 	list-style:none;
+		}
+		.jishi{
+			height: 73px;
+		}
+		.jishi img{
+			line-height: 73px;
+			float: left;
+			padding-top: 22px;
+			padding-right: 20px;
+		}
+		.ytxt{
+			font-family: "微软雅黑";
+			font-size:22px;
+			line-height: 73px;
+		}
+		#showDiv{
+			font-family: "微软雅黑";
+			font-size:22px;
+			color:#e94e25;
+			line-height: 73px;
+		}
+		.yzhushi{
+			font-family: "微软雅黑";
+			font-size:14px;
+			line-height: 73px;
+		}
+		.yjine{
+			font-family: "微软雅黑";
+			font-size:22px;
+			color:#e94e25;
+			line-height: 73px;
+			float: right;
+		}
+		.yshijian{
+			float: left;
+		}
+	</style>
+	<link rel="stylesheet" href="../style/flot.css">
+</head>
+<body>
+	<div class="header">
+		<div class="header-up">
+			<div class="inner">
+				<div class="inner-up">
+					<div class="inner-up-left">
+						<div class="up-left">
+							<img src="../images/weizhi.jpg" alt="">
+							<div class="lyscity">
+								<p>北京</p>
+								<a href="">切换</a>
+							</div>
+						</div>
+						<div class="up-right">
+							<img src="../images/shouji.jpg" alt="">
+							<div class="app">
+								<p>下载手机APP</p>
+							</div>
+						</div>
+					</div>
+					<div class="inner-up-right">
+						<div class="lyspic">
+							<img src="../images/qq.jpg" alt="">
+							<img src="../images/weibo.jpg" alt="">
+						</div>
+						<div class="lysp">
+							<p>登录 | 注册</p>
+						</div>		
+					</div>
+				</div>
+				<div class="inner-down">
+					<img src="../images/logo.png" alt="">
+						<div class="menu">
+							<ul>
+								<li><a href="">首页</a></li>
+								<li><a href="">目的地</a></li>
+								<li><a href="">线路</a></li>
+								<li><a href="">定制</a></li>
+								<li><a href="L-lead.html" target="_blank">自架团</a></li>
+								<li><a href="">摄影</a></li>
+								<li><a href="">互动</a></li>
+								<li><a href="">精选</a></li>
+								<li><a href="">预定</a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="header-down"></div>
+		</div>	
+	</div>
+	
+
+
+	<div id="content" style="margin-bottom:92px;">
+		<div class="inner">
+			<div class="series">
+				<div class="breadcrumb">
+					<strong>
+						<a href="#" style="color:#61c0de">&nbsp;&nbsp;&nbsp;自驾团</a>
+					</strong> 
+					<span>&gt;<a href="#" style="color:#61c0de">&nbsp;&nbsp;&nbsp;境内</a></span>
+					<span>&gt;<a href="#" style="color:#61c0de">&nbsp;&nbsp;&nbsp;云南落地自驾行摄之旅</a></span>
+					<span>&gt;<a href="#" style="color:#61c0de">&nbsp;&nbsp;&nbsp;我要报名</a></span>
+					<span>&gt;<a href="#" style="color:#61c0de">&nbsp;&nbsp;&nbsp;在线支付</a></span>
+				</div>			
+			</div>
+			<div class="liucheng cf" style="overflow:hidden; 
+	list-style:none;">
+				<span class="liucheng_span"></span>
+				<ul class="liucheng_ul">
+					<li>
+						<img src="../images/duihao.png" alt="">
+						<p class="liucheng_finish">选择路线</p>
+					</li>
+					<li>
+						<img src="../images/duihao.png" alt="">
+						<p class="liucheng_finish">填写订单</p>
+					</li>
+					<li>
+						<img src="../images/three.png" alt="">
+						<p class="liucheng_finish">在线支付</p>
+					</li>
+					<li>
+						<img src="../images/four.png" alt="">
+						<p>付款成功</p>
+					</li>
+				</ul>
+			</div>
+			<div class="jishi">
+				<img src="../images/shape.png" alt="">
+				<div class="shijian">
+					<div onload="init();" class="yshijian">
+						<span class="ytxt">提交成功，请您于</span>
+        				<span id="showDiv">24时00分00秒内</span>
+						<span class="ytxt">完成支付</span>
+						<span class="yzhushi">(逾期订单将被取消)</span>
+        			<script>
+            			var time;    
+            			var showDiv=document.getElementById("showDiv");
+            			var h=23;
+            			var m=59;
+            			var s=59;            
+            		//没有点击开始按钮的时候"showDiv"显示24:00:00,并且btn显示“开始”
+            			function init(){
+                			showDiv.innerHTML="24:00:00";
+                			btn.value="开始";
+            			}                    
+            		//进行倒计时显示
+            			function run(){
+                			--s;
+                			if(s<0){
+                	    		--m;
+                	    		s=59;
+                			}
+                			if(m<0){
+                	    		--h;
+                	    		m=59
+                			}
+                			if(h<0){
+                	    		s=0;
+                	    		m=0;
+                			}
+                			showDiv.innerHTML=h+"时"+m+"分"+s+"秒内";
+            				}
+            				setInterval(run,1000)
+        				</script>
+        			</div>
+				</div>
+				<span class="yjine">应付金额：￥5280</span>
+			</div>
+
+			<div class="yclear" style="clear:both;"></div>
+			<div class="zhifu">				
+				<dl class="method_dl cf">
+					<dt>请选择支付方式</dt>	     	
+					<dd class="method_zhi">
+						<span>支付宝</span>
+						<img src="../images/zhifubao.png" alt="" style="   width: 56px;height: 56px;margin: 22px 0;float: left;">
+						<i>快捷方便</i>
+						<div class="zhi_sanjiao"></div>
+						<div class="zhi_jian">荐</div>
+						<input type="radio" id="pay_radio4" name="payment" value="4" class="regular-radio">
+						<label for="pay_radio4" style=""></label><br>
+					</dd>
+      			 	
+
+      			 		<dd class="method_zhi">
+						<span>微信支付</span>
+						<img src="../images/weixin.png" alt="" style="width: 56px;height: 56px;margin: 22px 0;float: left;">
+					
+						<input type="radio" id="pay_radio5" name="payment" value="5" class="regular-radio">
+						<label for="pay_radio5"></label><br>
+					</dd>
+      			
+      	
+					<dd class="method_zhi">
+						<span>银联支付</span>
+						<img src="../images/yinlian.png" alt="" style="width: 56px;height: 56px;margin: 22px 0;float: left;">
+						
+						<input type="radio" id="pay_radio6" name="payment" value="6" class="regular-radio">
+						<label for="pay_radio6"></label><br>
+					</dd>
+      			
+				</dl>
+				<div class="cf">
+					<a href="#" class="ok">
+						<input type="submit" value="去支付" style="margin-left: 55px;width: 180px;background: #50bbdb;font-size: 20px;color: #fff;display: inline-block;text-align: center;float: right;height: 46px;line-height: 46px;border: 0;cursor: pointer;margin-bottom:92px;">
+					</a>
+					<input type="hidden" name="step" value="done">
+					<p>实付金额：<span>￥5280</span></p>
+				</div>
+				
+			</div>
+		</div>	
+	</div>
+
+
+ 
+ 
+
+	<div class="clear1"></div>
+	<link rel="stylesheet" href="../style/footer.css">
+		<div class="bottom" style="overflow:hidden; 
+	list-style:none;">
+		<div class="center boxcenter" style="overflow:hidden; 
+	list-style:none;">
+			<div class="bottom-l" style="margin: 0 auto;overflow:hidden; 
+	list-style:none;">
+				<div class="block1" style="text-align:center;overflow:hidden; 
+	list-style:none;">
+					<a href="#" class="white">人民交通出版社</a>
+				</div>
+				<div class="block1" style="text-align:center;overflow:hidden; 
+	list-style:none;">
+					<a href="#" class="white">爱自驾</a>
+				</div>
+				<div class="block1" style="text-align:center;overflow:hidden; 
+	list-style:none;">
+					<a href="#" class="white">联系我们</a>
+				</div>
+                <div class="block1" style="text-align:center;overflow:hidden; 
+	list-style:none;">
+					<a href="#" class="white">友情链接</a>
+				</div>
+                <div class="block1" style="text-align:center;overflow:hidden; 
+	list-style:none;">
+					<a href="#" class="white">爱自驾品牌店</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="foot">人民交通出版社股份有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 京ICP备15018898号-1</div>
+
+	<style>
+		.bottom {
+			clear: both;
+			padding: 10px 0px;
+			background-color: #444b55;;
+			margin-top: 0px;
+		}
+		.bottom-l {
+			float: left;
+			height: auto;
+			padding-left: 50px;
+			margin: 0 auto;
+			padding-top:0px;
+			border-right:none;
+			width: 990px;
+		}
+		.block1 {
+			width: 195px;float: left;
+		}
+		.block1 a.white{
+			color:#fcffff;
+		}
+		.block1 a:hover{color: #50bbdb; 
+			text-decoration: none;
+		}
+
+	</style>
+
+</body>
+</html>

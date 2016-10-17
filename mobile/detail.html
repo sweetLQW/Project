@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>支付页面</title>
+	<link rel="stylesheet" href="style/css/detail.css">
+</head>
+<body>
+	<div class="header">
+		<div class="cir">
+			<a href="alipay.html"><img class="demo" src="images/demo0.jpg" alt=""></a>
+		</div>
+		<span>自驾团</span>
+	</div>
+	<div class="banner">
+		<img src="images/demo32.jpg" alt="">
+	</div>
+	<div class="container">
+		
+	</div>
+	<div class="footer">
+		
+	</div>
+	<script src="script/fontsizeset.js"></script>
+	<script src="script/sea.js"></script>
+	<script src="script/fontsizeset.js"></script>
+	<script>
+		seajs.config({
+			"alias":{
+				"zepto":"zepto.js",
+				"page1":"fill-in.js",
+			}
+		})
+		seajs.use(["page1","jquery"],function(re){
+			re.cl();
+		})
+	</script>
+</body>
+</html>

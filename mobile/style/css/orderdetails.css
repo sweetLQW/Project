@@ -1,0 +1,188 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.clear {
+  clear: both;
+}
+.header {
+  width: 100%;
+  height: 0.88rem;
+  background-color: #50bbdb;
+  border: 0.00001rem solid white;
+}
+.header .demo {
+  width: 0.17rem;
+  height: 0.32rem;
+  position: absolute;
+  top: 0.17rem;
+  left: 0.19rem;
+  margin-top: 0.13rem;
+  margin-left: 0.18rem;
+}
+.header .cir {
+  height: 0.43rem;
+  width: 0.43rem;
+  border: 0.01rem solid white;
+  border-radius: 0.43rem;
+  margin-top: 0.23rem;
+  margin-left: 0.23rem;
+  float: left;
+}
+.header span {
+  font-size: 0.28rem;
+  position: absolute;
+  top: 0.31rem;
+  right: 2.65rem;
+  color: #ffffff;
+}
+.header a {
+  font-size: 0.28rem;
+  margin-top: 0.25rem;
+  margin-right: 0.1rem;
+  text-decoration: none;
+  color: #ffffff;
+  float: right;
+}
+.header a img {
+  width: 0.52rem;
+  height: 0.39rem;
+  float: right;
+}
+.banner {
+  height: 1.08rem;
+  width: 100%;
+  border-bottom: 0.01rem solid #dcdcdc;
+}
+.banner p {
+  font-size: 0.24rem;
+  width: 5.68rem;
+  line-height: 0.5rem;
+  float: left;
+}
+.banner img {
+  width: 0.13rem;
+  height: 0.25rem;
+  float: right;
+  margin-right: 0.24rem;
+  margin-top: 0.42rem;
+}
+.container {
+  height: 14.64rem;
+  width: 100%;
+  border: 0.01rem solid white;
+}
+.container .c-nav1,
+.container .c-nav3,
+.container .c-nav4,
+.container .c-nav5 {
+  padding-left: 0.28rem;
+  margin-top: 0.26rem;
+  border-bottom: 0.01rem solid #dcdcdc;
+}
+.container .title h1 {
+  font-size: 0.24rem;
+  border-left: 0.01rem solid #50bbdb;
+  padding-left: 0.19rem;
+}
+.container .ground1 {
+  margin-top: 0.27rem;
+}
+.container .ground1,
+.container .ground2,
+.container .ground3,
+.container .ground4,
+.container .ground5,
+.container .ground6,
+.container .ground7 {
+  width: 100%;
+  height: 0.44rem;
+  padding-left: 0.19rem;
+}
+.container .ground1 p,
+.container .ground2 p,
+.container .ground3 p,
+.container .ground4 p,
+.container .ground5 p,
+.container .ground6 p,
+.container .ground7 p {
+  font-size: 0.22rem;
+  float: left;
+}
+.container .ground1 span,
+.container .ground2 span,
+.container .ground3 span,
+.container .ground4 span,
+.container .ground5 span,
+.container .ground6 span,
+.container .ground7 span {
+  font-size: 0.22rem;
+  float: left;
+}
+.container .c-nav2 {
+  margin-top: 0.26rem;
+  border-bottom: 0.01rem solid #dcdcdc;
+}
+.container .top {
+  border-bottom: 0.01rem solid #dcdcdc;
+  width: 6.4rem;
+  padding-left: 0.28rem;
+}
+.container .top .ground .ground1,
+.container .top .ground .ground2 {
+  width: 50%;
+  height: 0.44rem;
+  padding-left: 0.19rem;
+  margin-top: 0.27rem;
+  float: left;
+}
+.container .top .ground .ground1 p,
+.container .top .ground .ground2 p {
+  font-size: 0.22rem;
+  float: left;
+}
+.container .top .ground .ground1 span,
+.container .top .ground .ground2 span {
+  font-size: 0.22rem;
+  float: left;
+}
+.container .bottom {
+  width: 100%;
+  padding-left: 0.28rem;
+  margin-top: 0.27rem;
+}
+.container .bottom .ground3,
+.container .bottom .ground4 {
+  width: 100%;
+  height: 0.44rem;
+  padding-left: 3.23rem;
+  float: right;
+}
+.container .bottom .ground3 p,
+.container .bottom .ground4 p {
+  font-size: 0.22rem;
+  float: left;
+}
+.container .bottom .ground3 span,
+.container .bottom .ground4 span {
+  font-size: 0.22rem;
+  float: left;
+}
+.container .c-nav3 .ground1 span,
+.container .c-nav3 .ground2 span,
+.container .c-nav3 .ground3 span {
+  font-size: 0.22rem;
+  float: right;
+  margin-right: 0.47rem;
+}
+.container .c-nav5 ul {
+  list-style: none;
+}
+.container .c-nav5 ul .first {
+  border-bottom: 0.01rem solid #dcdcdc;
+}

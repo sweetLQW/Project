@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>个人中心-订单列表页面</title>
+	<link rel="stylesheet" href="style/css/personalCenter-orderList.css">
+</head>
+<body>
+	<div class="header">
+		<img src="images/demo0.jpg" alt="">
+		<span>订单列表</span>
+	</div>
+	<div class="nav">
+		<ul class="nav-list">
+			<li class="border all">全部分类
+				<img src="images/0.png" alt="">
+			</li>
+			<li class="timeSort">按时间排序
+				<img src="images/0.png" alt="">
+			</li>
+			<div class="clear"></div>
+		</ul>
+	</div>
+	<div class="footer">
+		<div class="show close">
+			<div class="box"></div>
+			<div class="content">
+				<img src="images/demo1.png" alt="">
+				<ul>
+					<li><a href="">按下单时间排序</a></li>
+					<li><a href="">按出行时间排序</a></li>
+				</ul>
+			</div>
+				
+		</div>
+		<div class="show1 close">
+			<div class="box"></div>
+			<div class="content">
+				<img src="images/demo1.png" alt="">
+				<ul>
+					<li><a href="">按下单时间排序</a></li>
+					<li><a href="">按出行时间排序</a></li>
+				</ul>
+			</div>
+				
+		</div>
+		<div class="info1">
+			<div class="top">
+				<div class="left">
+					<p>订单号：<span>7195351</span></p>
+				</div>
+				<div class="center">
+					<p>待出行</p>
+				</div>
+				<div class="right">
+					<p>预定时间：<span>2015-12-29</span></p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="center">
+				<div class="c-top">
+					<h1>[春节]<魅力湘西过大年>湘西年夜饭，北京直飞</h1>
+				</div>
+				<div class="c-bottom">
+					<p>自驾游<span class="date">2016-02-07出发</span><span class="money">￥4580</span></p>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="inbox">
+					<h1>待出行</h1>
+					<select name="" id="list">
+						<option value="false">取消</option>
+						<option value="false">改签</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="info2">
+			<div class="top">
+				<div class="left">
+					<p>订单号：<span>7195351</span></p>
+				</div>
+				<div class="center">
+					<p>待支付</p>
+				</div>
+				<div class="right">
+					<p>预定时间：<span>2015-12-29</span></p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="center">
+				<div class="c-top">
+					<h1>[5月]<阿尔山童话世界冰雪温泉之旅>北京直飞....</h1>
+				</div>
+				<div class="c-bottom">
+					<p>自驾游<span class="date">2016-05-27出发</span><span class="money">￥4580</span></p>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="inbox">
+					<h1>待支付</h1>
+					<select name="" id="list">
+						<option value="false">付款</option>
+						<option value="false">改签</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="info3">
+			<div class="top">
+				<div class="left">
+					<p>订单号：<span>7195351</span></p>
+				</div>
+				<div class="center">
+					<p>待评价</p>
+				</div>
+				<div class="right">
+					<p>预定时间：<span>2015-12-29</span></p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="center">
+				<div class="c-top">
+					<h1>[4月]<海南海岛环驾8日自驾之旅>海口直飞....</h1>
+				</div>
+				<div class="c-bottom">
+					<p>自驾游<span class="date">2016-04-07出发</span><span class="money">￥4580</span></p>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="inbox">
+					<h1>待评价</h1>
+					<select name="" id="list">
+						<option value="false">点评</option>
+						<option value="false">改签</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="info4">
+			<div class="top">
+				<div class="left">
+					<p>订单号：<span>7195351</span></p>
+				</div>
+				<div class="center">
+					<p>已取消</p>
+				</div>
+				<div class="right">
+					<p>预定时间：<span>2015-12-29</span></p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="center">
+				<div class="c-top">
+					<h1>[5月]<食在广东粤菜美食6日自驾>北京直飞....</h1>
+				</div>
+				<div class="c-bottom">
+					<p>自驾游<span class="date">2016-05-07出发</span><span class="money">￥4580</span></p>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="inbox">
+					<h1>已取消</h1>
+					<select name="" id="list">
+						<option value="false">查看</option>
+						<option value="false">改签</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script/sea.js"></script>
+	<script src="script/fontsizeset.js"></script>
+	<script>
+		seajs.config({
+			"alias":{
+				"zepto":"zepto.js",
+				"page1":"personalCenter-orderList.js",
+			}
+		})
+		seajs.use(["page1","jquery"],function(re){
+			re.cl();
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.clear {
+  clear: both;
+}
+.header {
+  width: 100%;
+  height: 0.88rem;
+  background-color: #50bbdb;
+  border: 0.00001rem solid white;
+}
+.header .demo {
+  width: 0.17rem;
+  height: 0.32rem;
+  position: absolute;
+  top: 0.17rem;
+  left: 0.19rem;
+  margin-top: 0.13rem;
+  margin-left: 0.18rem;
+}
+.header .cir {
+  height: 0.43rem;
+  width: 0.43rem;
+  border: 0.01rem solid white;
+  border-radius: 0.43rem;
+  margin-top: 0.23rem;
+  margin-left: 0.23rem;
+  float: left;
+}
+.header span {
+  font-size: 0.28rem;
+  position: absolute;
+  top: 0.31rem;
+  right: 2.65rem;
+  color: #ffffff;
+}
+.header a {
+  font-size: 0.28rem;
+  margin-top: 0.25rem;
+  margin-right: 0.1rem;
+  text-decoration: none;
+  color: #ffffff;
+  float: right;
+}
+.header a img {
+  width: 0.52rem;
+  height: 0.39rem;
+  float: right;
+}
+.banner {
+  height: 1.08rem;
+  width: 100%;
+  border-bottom: 0.01rem solid #dcdcdc;
+}
+.banner p {
+  font-size: 0.24rem;
+  line-height: 0.5rem;
+  float: left;
+}
+.container {
+  height: 11rem;
+  width: 100%;
+  border: 0.01rem solid transparent;
+  background-color: #ededed;
+}
+.container .f-top,
+.container .f-center1,
+.container .f-center2,
+.container .f-bottom {
+  width: 6.05rem;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border: 0.01rem solid transparent;
+  border-radius: 0.1rem;
+  margin-top: 0.2rem;
+}
+.container .f-top .title,
+.container .f-center1 .title,
+.container .f-center2 .title,
+.container .f-bottom .title {
+  height: 0.52rem;
+  border: 0.01rem solid transparent;
+  border-bottom: 0.01rem solid #ededed;
+}
+.container .f-top .title h1,
+.container .f-center1 .title h1,
+.container .f-center2 .title h1,
+.container .f-bottom .title h1 {
+  font-size: 0.24rem;
+  border-left: 0.01rem solid #50bbdb;
+  padding-left: 0.19rem;
+  margin-left: 0.12rem;
+  margin-top: 0.12rem;
+}
+.container .f-top .ground .ground1,
+.container .f-center1 .ground .ground1,
+.container .f-center2 .ground .ground1,
+.container .f-bottom .ground .ground1 {
+  margin-top: 0.27rem;
+}
+.container .f-top .ground .ground1,
+.container .f-center1 .ground .ground1,
+.container .f-center2 .ground .ground1,
+.container .f-bottom .ground .ground1,
+.container .f-top .ground .ground2,
+.container .f-center1 .ground .ground2,
+.container .f-center2 .ground .ground2,
+.container .f-bottom .ground .ground2,
+.container .f-top .ground .ground3,
+.container .f-center1 .ground .ground3,
+.container .f-center2 .ground .ground3,
+.container .f-bottom .ground .ground3,
+.container .f-top .ground .ground4,
+.container .f-center1 .ground .ground4,
+.container .f-center2 .ground .ground4,
+.container .f-bottom .ground .ground4,
+.container .f-top .ground .ground5,
+.container .f-center1 .ground .ground5,
+.container .f-center2 .ground .ground5,
+.container .f-bottom .ground .ground5 {
+  width: 100%;
+  height: 0.44rem;
+  padding-left: 0.19rem;
+}
+.container .f-top .ground .ground1 p,
+.container .f-center1 .ground .ground1 p,
+.container .f-center2 .ground .ground1 p,
+.container .f-bottom .ground .ground1 p,
+.container .f-top .ground .ground2 p,
+.container .f-center1 .ground .ground2 p,
+.container .f-center2 .ground .ground2 p,
+.container .f-bottom .ground .ground2 p,
+.container .f-top .ground .ground3 p,
+.container .f-center1 .ground .ground3 p,
+.container .f-center2 .ground .ground3 p,
+.container .f-bottom .ground .ground3 p,
+.container .f-top .ground .ground4 p,
+.container .f-center1 .ground .ground4 p,
+.container .f-center2 .ground .ground4 p,
+.container .f-bottom .ground .ground4 p,
+.container .f-top .ground .ground5 p,
+.container .f-center1 .ground .ground5 p,
+.container .f-center2 .ground .ground5 p,
+.container .f-bottom .ground .ground5 p {
+  font-size: 0.22rem;
+  float: left;
+}
+.container .f-top .ground .ground1 span,
+.container .f-center1 .ground .ground1 span,
+.container .f-center2 .ground .ground1 span,
+.container .f-bottom .ground .ground1 span,
+.container .f-top .ground .ground2 span,
+.container .f-center1 .ground .ground2 span,
+.container .f-center2 .ground .ground2 span,
+.container .f-bottom .ground .ground2 span,
+.container .f-top .ground .ground3 span,
+.container .f-center1 .ground .ground3 span,
+.container .f-center2 .ground .ground3 span,
+.container .f-bottom .ground .ground3 span,
+.container .f-top .ground .ground4 span,
+.container .f-center1 .ground .ground4 span,
+.container .f-center2 .ground .ground4 span,
+.container .f-bottom .ground .ground4 span,
+.container .f-top .ground .ground5 span,
+.container .f-center1 .ground .ground5 span,
+.container .f-center2 .ground .ground5 span,
+.container .f-bottom .ground .ground5 span {
+  font-size: 0.22rem;
+  float: left;
+}
+.container .f-top .ground .ground1 button,
+.container .f-center1 .ground .ground1 button,
+.container .f-center2 .ground .ground1 button,
+.container .f-bottom .ground .ground1 button,
+.container .f-top .ground .ground2 button,
+.container .f-center1 .ground .ground2 button,
+.container .f-center2 .ground .ground2 button,
+.container .f-bottom .ground .ground2 button,
+.container .f-top .ground .ground3 button,
+.container .f-center1 .ground .ground3 button,
+.container .f-center2 .ground .ground3 button,
+.container .f-bottom .ground .ground3 button,
+.container .f-top .ground .ground4 button,
+.container .f-center1 .ground .ground4 button,
+.container .f-center2 .ground .ground4 button,
+.container .f-bottom .ground .ground4 button,
+.container .f-top .ground .ground5 button,
+.container .f-center1 .ground .ground5 button,
+.container .f-center2 .ground .ground5 button,
+.container .f-bottom .ground .ground5 button {
+  float: right;
+  margin-right: 0.5rem;
+  width: 0.77rem;
+  height: 0.53rem;
+  color: #50bbdb;
+}
+.container .f-top .ground .ground1 a,
+.container .f-center1 .ground .ground1 a,
+.container .f-center2 .ground .ground1 a,
+.container .f-bottom .ground .ground1 a,
+.container .f-top .ground .ground2 a,
+.container .f-center1 .ground .ground2 a,
+.container .f-center2 .ground .ground2 a,
+.container .f-bottom .ground .ground2 a,
+.container .f-top .ground .ground3 a,
+.container .f-center1 .ground .ground3 a,
+.container .f-center2 .ground .ground3 a,
+.container .f-bottom .ground .ground3 a,
+.container .f-top .ground .ground4 a,
+.container .f-center1 .ground .ground4 a,
+.container .f-center2 .ground .ground4 a,
+.container .f-bottom .ground .ground4 a,
+.container .f-top .ground .ground5 a,
+.container .f-center1 .ground .ground5 a,
+.container .f-center2 .ground .ground5 a,
+.container .f-bottom .ground .ground5 a {
+  text-decoration: none;
+  color: #50bbdb;
+}
+.container .f-center2 img {
+  width: 0.27rem;
+  height: 0.29rem;
+  float: left;
+}
+.container .f-center2 p {
+  font-size: 0.22rem;
+  float: left;
+  line-height: 0.3rem;
+  margin-left: 0.06rem;
+}
+.container .f-bottom ul {
+  list-style: none;
+}
+.container .f-bottom ul .bor-bot {
+  border-bottom: 0.01rem solid #ededed;
+}
+.container .f-bottom ul li {
+  font-size: 0.22rem;
+  margin-left: 0.37rem;
+  margin-top: 0.13rem;
+  padding-bottom: 0.13rem;
+}
+.container .f-bottom ul li input {
+  float: left;
+  margin-top: 0.1rem;
+}
+.container .f-bottom ul li p {
+  float: left;
+  margin-left: 0.12rem;
+}
+.container .f-bottom ul li .detail {
+  float: right;
+}
+.container .f-bottom ul li .detail a {
+  float: right;
+  text-decoration: none;
+  color: black;
+}
+.container .f-bottom ul li .detail span {
+  color: #f98d0d;
+}
+.container .agree {
+  font-size: 0.2rem;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+.footer {
+  height: 0.99em;
+  width: 100%;
+  background-color: #ffffff;
+}
+.footer p {
+  font-size: 0.24rem;
+  color: #f98d0d;
+  line-height: 0.9rem;
+  padding-left: 0.17rem;
+  float: left;
+}
+.footer button {
+  width: 2.35rem;
+  height: 0.66rem;
+  float: right;
+  margin-right: 0.26rem;
+  margin-top: 0.16rem;
+  background-color: #50bbdb;
+  color: #ffffff;
+}

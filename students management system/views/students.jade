@@ -1,0 +1,39 @@
+extends layout
+block content
+    link(rel="stylesheet" href="style/bootstrap.css")
+    button.showinsert.btn.btn-primary 添加数据
+    table.tab.table.table-hover.table-striped
+        thead
+            th num
+            th name
+            th age
+            th sex
+            th 修改
+            th 删除
+        tbody
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    h4#myModalLabel.modal-title 添加/修改学生信息
+                .modal-body
+                    form#myform
+                        .form-group
+                            label 编号：
+                            input.num.form-control(type='text', name='num')
+                        .form-group
+                            label 姓名：
+                            input.form-control(type='text', name='name')
+                        .form-group
+                            label 年龄:
+                            input.form-control(type='text', name='age')
+                        .form-group
+                            label 性别:
+                            input.form-control(type='text', name='sex')
+                        button.btn.btn-default(type='button', data-dismiss='modal') 关闭
+                        button.c.btn.btn-primary(type='submit') 添加/修改
+    script(src='script/jquery.js')
+    script(src='script/bootstrap.min.js')
+    script(src='script/bootstrap.js')
+    script(src='script/students.js')

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title Document
+    link(rel="stylesheet" href="style/login.css")
+    link(rel="stylesheet" href="style/bootstrap.min.css")
+body
+    div.bgi
+        div.loginbox
+            h6  #{info}
+            form.myform(action="/home" method="post")
+                div.box
+                    label
+                        h3 email：
+                    input.email.form-control(placeholder="请输入邮箱" type="text" name="email")
+                div.box
+                    label
+                        h3 密&nbsp;&nbsp;码：
+                    input.password.form-control(placeholder="请输入密码" type="password" name="password")
+                button.login.btn.btn-primary(type="submit") 登录
+    script(src="script/jquery.js")
+    script(src="script/login.js")
+    script(src="script/bootstrap.min.js")

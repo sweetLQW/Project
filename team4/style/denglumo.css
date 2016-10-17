@@ -1,0 +1,31 @@
+.input{
+			display: block;
+			width: 352px;
+			height: 48px;
+			margin-left: 70px;
+			color: #333333;
+		}
+		.zhuce{
+			font-size: 14px;
+			color: #50bbdb;
+
+		}
+		.clear{
+			clear: both;
+		}
+		.cf{
+			color: #b0b0b0;	
+			display:block;
+			text-decoration:none;
+			float:left;
+		}
+		.xian{
+			width: 134px;
+			height: 13px;
+			border-top:1px solid #50bbdb;
+			margin-top:6px;
+			float:left;
+		}
+		.other{
+			padding: 30px 20px 36px 118px;
+		}

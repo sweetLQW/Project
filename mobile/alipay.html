@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>支付页面</title>
+	<link rel="stylesheet" href="style/css/alipay.css">
+</head>
+<body>
+	<div class="header">
+		<img src="images/demo0.jpg" alt="">
+		<span>选择支付方式</span>
+	</div>
+	<div class="banner">
+		<p>订单总额：</p>
+		<p class="money">￥5920</p>
+	</div>
+	<div class="container">
+		<div class="way">
+			<ul>
+				<li>
+					<img src="images/demo25.jpg" alt="">
+					<h1>支付宝支付</h1>
+					<input type="radio" name="radio">
+				</li>
+				<li>
+					<img src="images/demo26.jpg" alt="">
+					<h1>微信支付</h1>
+					<input type="radio" name="radio">
+				</li>
+				<li>
+					<img src="images/demo27.jpg" alt="">
+					<h1>银联支付</h1>
+					<input type="radio" name="radio">
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		<h1>支付：<span>￥5920</span></h1>
+		<p>剩余
+			<span class="hours"></span>:
+			<span class="minutes"></span>:
+			<span class="seconds"></span>&nbsp;请尽快支付</p>
+		<button class="btn">付款</button>
+	</div>
+	<script src="script/fontsizeset.js"></script>
+	<script src="script/jquery.js"></script>
+	<script>
+			function fun(){
+				var strTime = "2016-9-12 11:00:00";
+				var timeTarget = new Date(strTime);
+				var target = timeTarget.getTime();
+				var timeNow = new Date();
+				var time = timeNow.getTime();
+				var result = target - time;
+				var day = Math.floor(result/86400000);
+				var yushuHours=result%86400000;
+				var hours = Math.floor(yushuHours/3600000);
+				var yushuMinutes = yushuHours%3600000;
+				var minutes = Math.floor(yushuMinutes/60000);
+				var yushuSeconds = yushuMinutes%60000;
+				var seconds = Math.floor(yushuSeconds/1000);
+				// $(".days").text(day)
+				$(".hours").text(hours)
+				$(".minutes").text(minutes)
+				$(".seconds").text(seconds)
+				if(hours==0 && minutes==0 && seconds==0){
+					clearInterval(t);
+					$(".btn").addClass("btn1")
+				}
+			}
+			fun();
+			var t = setInterval(fun,1000);
+	</script>
+</body>
+</html>

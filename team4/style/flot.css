@@ -1,0 +1,95 @@
+.liucheng{
+	border-bottom: 1px dotted #d2d2d2;
+}
+.zhifu .method_dl dt{
+	height: 52px;
+	line-height: 52px;
+	font-size: 18px;
+	color: #333333;
+	background: #f7f7f7;
+	padding-left: 30px;
+}
+.zhifu .method_dl dd{
+	height: 100px;
+	line-height: 100px;
+	color: #333333;
+	border-bottom: 1px dotted #e4e4e4;
+}
+.zhifu .method_dl .method_zhi{
+	position: relative;
+}
+.zhifu .method_dl dd span{
+	float: left;
+	width: 127px;
+	font-size: 20px;
+	padding-left: 30px;
+	height: 100px;
+}
+.zhifu .method_dl dd i{
+	font-size: 16px;
+	margin-left: 18px;
+	display: block;
+	float: left;
+}
+.zhifu .method_dl .method_zhi .zhi_sanjiao{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-width: 25px 35px 25px 35px;
+	border-style: solid;
+	border-color: #50bbdb #50bbdb transparent transparent;
+}
+.zhifu .method_dl .method_zhi .zhi_jian{
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	top:-35px;
+}
+.zhifu .method_dl input{
+	float: right;
+	margin-right: 90px;
+	margin-top: 40px;
+	background: url(../images/icon_zhifu_radio.png) no-repeat;
+}
+.regular-radio {
+	display: none;
+}
+.method_zhi .regular-radio + label{
+	position: absolute;
+	right: 40px;
+	top: 40px;
+}
+.regular-radio + label {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+.zhifu a.ok{
+	float: right;
+line-height: 46px;
+display: block;
+margin-left: 30px;
+margin-top: 50px;
+width: 180px;
+}
+.zhifu p{
+	line-height: 46px;
+	font-size: 16px;
+	color: #333333;
+	float: right;
+	margin-top: 50px;
+}
+.zhifu p span{
+	display: inline-block;
+	font-size: 20px;
+	color: #ea5221;
+}
