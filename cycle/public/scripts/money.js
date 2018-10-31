@@ -1,0 +1,90 @@
+if(window.localStorage.number){
+    $(".out-b").css("display","block");
+    $(".title").css("display","block");
+    $(".login").css("display","none");
+    $.ajax({
+        type:"post",
+        url:"/getbalance",
+        data:{"number":window.localStorage.number,"money":"true"},
+        success:function(data){
+            $(".balance").text(data.money);
+        }
+    });
+}else{
+    location.href = "login.html";
+}
+$(document).on("tap",".inmoney",function(){
+    $(this).addClass("active").siblings().removeClass("active");
+    $(".number-in").val("");
+    $(".show-in").css("display","block");
+    $(".show-out").css("display","none");
+    $(".module-in").css("display","block");
+});
+$(document).on("tap",".outmoney",function(){
+    $(this).addClass("active").siblings().removeClass("active");
+    $(".number-in").val("");
+    $(".show-out").css("display","block");
+    $(".show-in").css("display","none");
+    $(".module-in").css("display","block");
+});
+$(document).on("tap",".cancel",function(){
+    $(".module-in").css("display","none");
+});
+$(document).on("click",".sure-in",function(){
+    var addmoney = Number($(".number-in").val());
+    if(addmoney>0){
+        $.ajax({
+            type:"post",
+            url:"/in",
+            async:"false",
+            data:{"number":window.localStorage.number,"addmoney":addmoney}
+        });
+        $(".module-in").css("display","none");
+    }else{
+        $(".hint").text("请输入大于0的数值！")
+    }
+    setTimeout(function(){
+        $.ajax({
+            type:"post",
+            url:"/getbalance",
+            async:"false",
+            data:{"number":window.localStorage.number,"money":"true"},
+            success:function(data){
+                console.log(data.money);
+                $(".balance").text(data.money);
+            }
+        });
+    },500)
+});
+$(document).on("click",".sure-out",function(){
+    var removemoney = Number($(".number-out").val());
+    var allmoney = Number($(".balance").text());
+    if(removemoney>0){
+        if(allmoney<removemoney){
+            $(".hint").text("余额不足！");
+        }else{
+            $(".hint").text("");
+            $.ajax({
+                type:"post",
+                url:"/out",
+                async:"false",
+                data:{"number":window.localStorage.number,"removemoney":removemoney}
+            });
+            $(".module-in").css("display","none");
+        }
+    }else{
+        $(".hint").text("请输入大于0的数值！")
+    }
+    setTimeout(function(){
+        $.ajax({
+            type:"post",
+            url:"/getbalance",
+            async:"false",
+            data:{"number":window.localStorage.number,"money":"true"},
+            success:function(data){
+                console.log(data.money);
+                $(".balance").text(data.money);
+            }
+        });
+    },500)
+});

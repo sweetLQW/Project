@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body,html {
+  height: 100%;
+}
+.container {
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+  .c-top {
+    width: 100%;
+    height: 80%;
+    font-size: 0.3rem;
+    label {
+      font-size: 0.35rem;
+      margin-top: 0.3rem;
+      display: block;
+    }
+    .password {
+      font-size: 1.8rem;
+      text-align: center;
+      color: #42da52;
+      border: 2px solid #3eab50;
+      margin-top: 0.3rem;
+    }
+  }
+  .c-bottom {
+    width: 100%;
+    height: 20%;
+    font-size: 0.3rem;
+    .question {
+        text-decoration: none;
+    }
+  }
+}
+.time {
+  display: none;
+  width: 60%;
+  height: 50%;
+  margin: 0 auto;
+  .h,
+  .m,
+  .s {
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    font-size: 0.6rem;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1rem;
+    position: relative;
+    margin-bottom: 1.2rem;
+  }
+  .m {
+    margin-left: 0.4rem;
+  }
+  .s {
+    float: right;
+  }
+  .symbol {
+    position: absolute;
+    height: 1rem;
+    float: left;
+    text-align: center;
+    line-height: 1rem;
+  }
+  .s1,
+  .s2 {
+    left: 1.1rem;
+    top: 0;
+  }
+  .end {
+    width: 100%;
+    height: 0.7rem;
+    margin: 0 auto;
+    display: block;
+    background-color: #42da52;
+    border: 1px solid #42da52 ;
+    font-size: 0.3rem;
+    color: #fff;
+  }
+  .end:focus,
+  .end:active,
+  .end:link {
+    background-color: #42bf4f;
+    border: 2px solid #42bf4f ;
+  }
+}
+.pay,
+.pay-same {
+  display: none;
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+  font-size: 0.4rem;
+  border: 1px solid transparent;
+  .success {
+    margin-top: 1rem;
+    background-color: #42da52;
+    padding-top: 0.5rem;
+    padding-bottom: 0.6rem;
+    .spend {
+      color: red;
+    }
+  }
+  .success p {
+    text-align: center;
+    margin-top: 0.1rem;
+  }
+  .return {
+    font-size: 0.3rem;
+    margin-top: 0.4rem;
+    text-align: center;
+    .returnS {
+      color: red;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+  .schedule-same {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+#map {
+  display: none;
+}

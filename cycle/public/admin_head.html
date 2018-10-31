@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>管理员首页</title>
+    <link rel="stylesheet" href="styles/css/admin_head.css">
+</head>
+<body>
+<div class="header">
+    <div class="menu">
+        <img src="images/side.png" alt="">
+    </div>
+    <div class="title">
+        <p>校园共享单车后台管理</p>
+    </div>
+</div>
+<div class="container">
+    <div class="container-bar"></div>
+    <p>欢迎来到共享单车后台管理系统，滑动左侧边栏进行你的操作。</p>
+    <div class="nav">
+        <h6>用户信息查看</h6>
+        <table class="usersinfo">
+            <thead>
+                <th>手机号</th>
+                <th>姓名</th>
+                <th>学校</th>
+                <th>身份证号</th>
+                <th>封号</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="nav">
+        <h6>解封用户</h6>
+        <table class="lock">
+            <thead>
+            <th>手机号</th>
+            <th>姓名</th>
+            <th>学校</th>
+            <th>身份证号</th>
+            <th>解封</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="nav">
+        <h6>问题车辆</h6>
+        <table class="showquestion">
+            <thead>
+                <th>车牌号</th>
+                <th>损坏情况</th>
+                <th>修理完成</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="nav">
+        <h6>增删车辆</h6>
+        <input class="search" type="text" placeholder="请输入车牌号查找"/>
+        <input class="subsearch" type="button" value="查找"/>
+        <table class="cyclehandle">
+            <thead>
+                <th>车牌号</th>
+                <th>密码</th>
+                <th>修改</th>
+                <th>删除</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <span class='addcycle clearFix'>添加</span>
+    </div>
+    <div class="nav">
+        <h6>总消费金额</h6>
+        <p>共消费金额：<span class="totalmoney"></span></p>
+    </div>
+    <div class="nav">
+        <h6>车辆骑行次数</h6>
+        <p><span class="cycleby"></span></p>
+    </div>
+</div>
+<div class="side">
+    <div class="side-side"></div>
+    <div class="side-nav">
+        <div class="side-info">
+            <div class="side-headimg">
+                <img src="images/1.jpeg" alt="">
+            </div>
+            <div class="side-accountnumber">
+                <p class="admin"></p>
+            </div>
+        </div>
+        <ul class="side-list">
+            <li class="parent-title">用户管理</li>
+            <li class="child-title">用户信息</li>
+            <li class="child-title">解封用户</li>
+            <li class="parent-title">车辆管理</li>
+            <li class="child-title">问题车辆</li>
+            <li class="child-title">增删车辆</li>
+            <li class="parent-title">数据统计</li>
+            <li class="child-title">总消费金额</li>
+            <li class="child-title">车辆骑行次数</li>
+        </ul>
+        <div class="side-footer">
+            <button class="exit">退出登录</button>
+        </div>
+    </div>
+</div>
+<div class="use-modal">
+    <div class="inner-modal close"></div>
+    <div class="content">
+        <div class="content-inner">
+            <div class="content-inner-top">
+            </div>
+            <div class="content-inner-bottom">
+                <form action="">
+                    <input class="cycle-number" type="text" placeholder="请输入车牌号">
+                    <input class="cycle-password" type="text" placeholder="请输入锁密码">
+                    <input class="sub subadd" type="button" value="添加">
+                    <input class="sub subupdate" type="button" value="修改">
+                    <input class="sub close" type="button" value="取消">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" charset="UTF-8" src="scripts/frames/fontsizeset.js"></script>
+<script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto.js"></script>
+<script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto-touch.js"></script>
+<script type="text/javascript" charset="UTF-8" src="scripts/frames/fx_method.js"></script>
+<script type="text/javascript" charset="UTF-8" src="scripts/admin/admin_head.js"></script>
+</body>
+</html>

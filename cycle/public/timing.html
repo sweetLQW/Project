@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>校园共享单车给出密码开始计时</title>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/fontsizeset.js"></script>
+    <link rel="stylesheet" href="styles/css/timing.css">
+    <link rel="stylesheet" href="styles/css/common.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="c-top">
+            <label>车牌号对应的密码是：</label>
+            <h3 class="password"></h3>
+        </div>
+        <div class="c-bottom">
+            <p><span class="minute">10</span>秒后开始计时,如有问题请点击<a href="question.html" class="question">立即报修</a></p>
+        </div>
+    </div>
+    <div class="time">
+        <!--<p>我是计时页面</p>-->
+        <div class="h">
+            <span class="hours"></span>
+            <div class="symbol s1"><span>:</span></div>
+        </div>
+        <div class="m">
+            <span class="minutes"></span>
+            <div class="symbol s2"><span>:</span></div>
+        </div>
+        <div class="s">
+            <span class="seconds"></span>
+        </div>
+        <input type="button" value="结束行程" class="end">
+    </div>
+    <div class="pay">
+        <div class="success">
+            <p>行程已结束。</p>
+            <p>您此次行程共花费 <span class="spend"></span> 元，</p>
+            <p>期待与您的下次相遇。</p>
+        </div>
+        <p class="return"><span class="returnS">5</span>秒后返回主页</p>
+    </div>
+    <div id="map" style="width: 100%;height:100%"></div>
+    <script type="text/javascript" charset="UTF-8" src="http://api.map.baidu.com/api?v=2.0&ak=u8IChcBNOPYnjMe9Hf0A2vhrvMg3MVjj&s=1"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto-touch.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/timing.js"></script>
+</body>
+</html>

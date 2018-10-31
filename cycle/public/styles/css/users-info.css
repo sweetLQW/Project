@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-size: 0.3rem;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.hint {
+  font-size: 0.3rem;
+  color: red;
+}
+.clearFix:before,
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header {
+  width: 100%;
+  height: 0.8rem;
+  background-color: #42da52;
+  border-bottom: 1px solid #42da52;
+}
+.header .menu {
+  float: left;
+  height: 100%;
+  width: 10%;
+  color: #fff;
+  line-height: 100%;
+  font-size: 0.6rem;
+  padding-left: 0.3rem;
+  padding-top: 1%;
+}
+.header .title {
+  float: left;
+  padding-top: 0.2rem;
+}
+.header .title p {
+  color: #fff;
+}
+.container .c-top {
+  border: 1px solid transparent;
+}
+.container .c-top .c-t-head-ortrait {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 1.8rem;
+  overflow: hidden;
+  margin: 10% 40% 2% 36%;
+}
+.container .c-top .c-t-head-ortrait img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.container .c-top .c-t-number {
+  margin-bottom: 2%;
+}
+.container .c-top .c-t-number p {
+  text-align: center;
+}
+.container .c-bottom ul #birth input {
+  width: 2rem;
+  border: none;
+  outline: none;
+  height: 0.5rem;
+  text-align: right;
+  font-size: 0.3rem;
+}
+.container .c-bottom ul li {
+  list-style: none;
+  height: 4%;
+  width: 90%;
+  padding: 5%;
+  border-bottom: 1px solid lightgray;
+}
+.container .c-bottom ul li .left {
+  float: left;
+}
+.container .c-bottom ul li .right {
+  float: right;
+}
+.container .c-bottom ul li .sign {
+  float: right;
+  padding-left: 1%;
+}
+.push {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  background-color: rgba(15, 15, 15, 0.3);
+}
+.push .nav {
+  width: 78%;
+  padding: 2%;
+  font-size: 0.4rem;
+  position: absolute;
+  top: 30%;
+  left: 9%;
+  background-color: #fff;
+}
+.push .nav .n-top .page1 input {
+  width: 100%;
+  font-size: 0.4rem;
+  height: 0.8rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #42da52;
+  margin: 9% 0;
+}
+.push .nav .n-top .page2 input {
+  width: 100%;
+  height: 0.38rem;
+  float: left;
+  margin-left: -2rem;
+  margin-top: 2%;
+}
+.push .nav .n-top .page2 span {
+  margin-left: -2rem;
+}
+.push .nav .n-bottom {
+  font-size: 0.3rem;
+}
+.push .nav .n-bottom .sure,
+.push .nav .n-bottom .cancel {
+  float: right;
+  padding: 4%;
+  color: #42da52;
+}

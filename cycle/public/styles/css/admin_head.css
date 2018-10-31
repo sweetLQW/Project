@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.clearFix:before,
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header {
+  width: 100%;
+  height: 1rem;
+  background-color: #42da52;
+  border-bottom: 1px solid #42da52;
+}
+.header .menu {
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+.header .menu img {
+  margin: 0 auto;
+  display: block;
+  padding-top: 0.4rem;
+}
+.header .title {
+  height: 100%;
+  width: 80%;
+  float: left;
+}
+.header .title p {
+  margin-left: 0.5rem;
+  width: 60%;
+  padding-top: 0.35rem;
+  font-size: 0.3rem;
+  color: #fff;
+}
+.container {
+  width: 100%;
+  height: 90%;
+  font-size: 0.6rem;
+}
+.container p {
+  font-size: 0.4rem;
+  padding: 10%;
+}
+.container .nav {
+  display: none;
+}
+.container .nav .search {
+  border: 1px solid #42da52;
+  width: 60%;
+  height: 0.6rem;
+  display: block;
+  margin: 0.4rem 0;
+  float: left;
+}
+.container .nav .subsearch {
+  width: 20%;
+  height: 0.6rem;
+  float: left;
+  margin: 0.4rem 4%;
+}
+.container .nav p {
+  text-align: center;
+}
+.container .nav span,
+.container .nav p {
+  font-size: 0.3rem;
+}
+.container .nav h6 {
+  text-align: center;
+  margin-top: 0.4rem;
+}
+.container .nav table {
+  font-size: 0.1rem;
+  width: 100%;
+  margin-top: 0.4rem;
+  border-top: 1px solid black;
+}
+.container .nav table td,
+.container .nav table th {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  height: 0.6rem;
+  text-align: center;
+}
+.container .nav table tr > td:nth-child(1),
+.container .nav table tr > th:nth-child(1) {
+  border-left: 1px solid;
+}
+.container .nav .addcycle {
+  float: right;
+  margin: 5%;
+  padding: 1% 2%;
+  background-color: #42da52;
+}
+.container .container-bar {
+  width: 10%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+}
+.use-modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.use-modal .inner-modal {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.use-modal .content {
+  width: 100%;
+  height: 4rem;
+  position: absolute;
+  bottom: 2rem;
+  z-index: 999;
+  background-color: #fff;
+}
+.use-modal .content .content-inner {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.use-modal .content .content-inner .content-inner-top {
+  height: 20%;
+  width: 100%;
+}
+.use-modal .content .content-inner .content-inner-bottom {
+  height: 70%;
+  width: 100%;
+}
+.use-modal .content .content-inner .content-inner-bottom .cycle-number,
+.use-modal .content .content-inner .content-inner-bottom .cycle-password {
+  height: 0.6rem;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #9E9E9E;
+  margin-top: 0.2rem;
+}
+.use-modal .content .content-inner .content-inner-bottom .cycle-number:focus,
+.use-modal .content .content-inner .content-inner-bottom .cycle-password:focus {
+  border: 2px solid #42da52;
+  outline: #42da52;
+}
+.use-modal .content .content-inner .content-inner-bottom .hint {
+  font-size: 0.2rem;
+  display: inherit;
+  text-align: center;
+  color: red;
+}
+.use-modal .content .content-inner .content-inner-bottom .sub {
+  background-color: #42da52;
+  border: 1px solid #42da52;
+  width: 1.6rem;
+  height: 2.6em;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0.4rem;
+  float: right;
+  margin-right: 0.8rem;
+}
+.side {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  background-color: rgba(142, 141, 146, 0.5);
+}
+.side .side-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.side .side-nav {
+  background-color: #fff;
+  width: 55%;
+  height: 100%;
+  padding: 0 0.2rem;
+  position: relative;
+  z-index: 101;
+}
+.side .side-nav .side-info {
+  width: 100%;
+  height: 1.6rem;
+  font-size: 0.3rem;
+  border-bottom: 1px solid lightgray;
+}
+.side .side-nav .side-info .side-headimg {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  position: relative;
+  top: 18%;
+  line-height: 1.6rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.side .side-nav .side-info .side-headimg img {
+  width: 1rem;
+  height: 1rem;
+}
+.side .side-nav .side-info .side-accountnumber {
+  float: left;
+  line-height: 1.6rem;
+  margin-left: 0.2rem;
+}
+.side .side-nav .side-list {
+  width: 100%;
+  list-style: none;
+  font-size: 0.3rem;
+}
+.side .side-nav .side-list .parent-title {
+  width: 100%;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  background-color: rgba(208, 208, 208, 0.44);
+}
+.side .side-nav .side-list .child-title {
+  width: 100%;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  color: red;
+}
+.side .side-nav .side-list li {
+  text-align: center;
+}
+.side .side-nav .side-footer {
+  position: absolute;
+  bottom: 0.4rem;
+  width: 70%;
+}
+.side .side-nav .side-footer button {
+  width: 100%;
+  height: 0.6rem;
+  background-color: #42da52;
+  border: #42da52;
+}

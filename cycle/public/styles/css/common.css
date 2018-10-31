@@ -1,0 +1,28 @@
+.quit {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+  font-size: 0.4rem;
+  background-color: rgba(15, 15, 15, 0.2);
+}
+.quit .nav {
+  width: 80%;
+  height: 40%;
+  margin: 0 auto;
+  margin-top: 60%;
+  background-color: white;
+}
+.quit .nav p {
+  height: 64%;
+  padding: 6%;
+}
+.quit .nav input {
+  width: 85%;
+  height: 10%;
+  display: block;
+  margin: 0 auto;
+  background-color: #42da52;
+  border: 1px solid #42da52;
+}

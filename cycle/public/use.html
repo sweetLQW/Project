@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>校园共享单车使用指南页面</title>
+    <link rel="stylesheet" href="styles/css/use.css">
+    <link rel="stylesheet" href="styles/css/common.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+            <a href="head.html"><</a>
+        </div>
+        <div class="title">
+            <p>使用指南</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav">
+            <h6>1.获取密码</h6>
+            <p>打开校园共享单车app，点击主页立即用车，输入对应的车牌号，获取密码。</p>
+            <h6>2.开锁</h6>
+            <p>获取密码后，在对应的密码锁上输入密码，按下确认按钮，开锁成功。</p>
+            <h6>3.开始计费</h6>
+            <p>当开锁成功后，系统会在120秒后开始计费，这期间如果发现自行车损坏，则可以点击立即报修按钮，此后会返回主页,此次不计费。</p>
+            <h6>4.结束行程</h6>
+            <p>当行程结束时，请自行点击结束行程按钮结束行程。</p>
+            <h6>5.取车与停车的位置</h6>
+            <p>校园共享单车无固定停车位，它是可以随时取用的，你使用结束后，将车子停在道路两旁不妨碍他人安全的地域即可，可方便他人使用。</p>
+        </div>
+    </div>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/fontsizeset.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto-touch.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/common.js"></script>
+    <script>
+        if(!window.localStorage.number){
+            location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

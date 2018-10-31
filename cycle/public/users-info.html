@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>校园共享单车个人信息页面</title>
+    <link rel="stylesheet" href="styles/css/users-info.css">
+    <link rel="stylesheet" href="styles/css/common.css"/>
+    <link rel="stylesheet" href="styles/css/zepto-mdater.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+            <a href="head.html"><</a>
+        </div>
+        <div class="title">
+            <p>个人信息</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="c-top">
+            <div class="c-t-head-ortrait">
+                <img src="../images/1.jpeg" alt=""/>
+            </div>
+            <div class="c-t-number">
+                <p class="number"></p>
+            </div>
+        </div>
+        <div class="c-bottom">
+            <ul class="clearFix" id="usersinfo">
+                <li class="clearFix direct" id="name" data-value="姓名">
+                    <span class="left">姓名</span>
+                    <span class="sign">></span>
+                    <span class="right">刘倩</span>
+                </li>
+                <li class="clearFix sex" id="sex">
+                    <span class="left">性别</span>
+                    <span class="sign">></span>
+                    <span class="right">刘倩</span>
+                </li>
+                <li class="clearFix" id="birth">
+                    <span class="left">出生年月</span>
+                    <span class="sign">></span>
+                    <!--<span class="right">刘倩</span>-->
+                    <input type="text" class="right" readonly/>
+                </li>
+                <li class="clearFix direct" id="school" data-value="学校">
+                    <span class="left">学校</span>
+                    <span class="sign">></span>
+                    <span class="right">刘倩</span>
+                </li>
+                <li class="clearFix direct" id="authentication" data-value="学号">
+                    <span class="left">学生认证</span>
+                    <span class="sign">></span>
+                    <span class="right">刘倩</span>
+                </li>
+                <li class="clearFix direct" id="idcard" data-value="身份证号">
+                    <span class="left">身份认证</span>
+                    <span class="sign">></span>
+                    <span class="right">刘倩</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="push close">
+        <div class="nav">
+            <div class="n-top">
+                <div class="page1">
+                    <p class="p-name">请输入您的<span></span>：</p>
+                    <input type="text" class="text"/>
+                    <span class="hint"></span>
+                </div>
+                <div class="page2">
+                    <p class="p-name">请选择您的性别：</p>
+                    <input type="radio" class="male" value="男" name="sex" checked/>
+                    <span>男</span>
+                    <br/>
+                    <input type="radio" class="female" value="女" name="sex"/>
+                    <span>女</span>
+                </div>
+            </div>
+            <div class="n-bottom">
+                <span class="sure">确定</span>
+                <span class="cancel">取消</span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/fontsizeset.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto-touch.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto-mdater.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/users-info.js"></script>
+</body>
+</html>

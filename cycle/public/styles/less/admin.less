@@ -1,0 +1,88 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  /*background-image: url(../images/1.jpeg);*/
+  font-size: 100px;
+}
+html,body {
+  height: 100%;
+}
+.clearFix:before,
+.clearFix:after {
+  content: "";
+  clear: left;
+  display: block;
+}
+.head {
+  height: 15rem;
+}
+.head h2 {
+  margin:0 auto;
+  text-align: center;
+  line-height: 200px;
+  color: #42da52;
+}
+.contain{
+  width:100%;
+  height: 38rem;
+}
+.loginbox{
+  height: 100%;
+  margin: 0 auto;
+  .login {
+    background-color: #42da52;
+    border: 1px solid #42da52;
+  }
+  .login:link,
+  .login:active {
+    background-color: #42bf4f;
+    border: 1px solid #42bf4f;
+  }
+
+}
+.loginbox form {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid rgba(0,0,0,0);
+}
+.loginbox .box #checkCode,
+.loginbox .box #phone {
+  border-radius: 8px;
+}
+.loginbox .box input{
+  //height: 100%;
+  font-size: 20px;
+  height: 40px;
+}
+.loginbox .box #checkCode {
+  width: 100%;
+  float: left;
+}
+.loginbox form #btnSendCode,
+.loginbox form .login {
+  height: 12%;
+  width: 100%;
+  margin-top: 4rem;
+  font-size: 20px;
+}
+.loginbox .box{
+  height: 12%;
+  margin-top: 14px;
+}
+.prompt {
+  height: 5%;
+  font-size: 26px;
+}
+form {
+  height: 80%;
+}
+.prompt {
+  color: red ;
+  height: 15px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+}

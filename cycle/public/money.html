@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>校园共享单车余额页面</title>
+    <link rel="stylesheet" href="styles/css/money.css">
+    <link rel="stylesheet" href="styles/css/common.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+            <a href="head.html"><</a>
+        </div>
+        <div class="title">
+            <p>我的钱包</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav">
+            <img src="images/balance.png" alt="">
+            <span class="title">我的余额</span>
+            <span class="out-b">￥ <span class="balance"></span></span>
+        </div>
+    </div>
+    <div class="footer">
+        <input class="inmoney active" type="button" value="充值">
+        <input class="outmoney" type="button" value="提现">
+    </div>
+    <div class="module-in">
+        <div class="inner-modal cancel"></div>
+        <div class="content">
+            <div class="content-inner">
+                <div class="content-inner-top">
+                    <span>请输入金额：</span>
+                </div>
+                <div class="content-inner-bottom">
+                    <form class="show-in">
+                        <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="cycle-number number-in" type="text" placeholder="充值金额">
+                        <span class="hint"></span>
+                        <input class="cancel" type="button" value="取消">
+                        <input class="sure-in sure" type="button" value="确定">
+                    </form>
+                    <form class="show-out">
+                        <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="cycle-number number-out" type="text" placeholder="提现金额">
+                        <span class="hint"></span>
+                        <input class="cancel" type="button" value="取消">
+                        <input class="sure-out sure" type="button" value="确定">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/fontsizeset.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto-touch.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/money.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>校园共享单车首页</title>
+    <link rel="stylesheet" href="styles/css/head.css">
+    <link rel="stylesheet" href="styles/css/common.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+            <img src="images/side.png" alt="">
+        </div>
+        <div class="title">
+            <p>校园共享单车</p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="map"></div>
+        <div class="container-bar"></div>
+        <div class="use">
+            <span class="hint-login">请登录后用车</span>
+            <h6>立即用车</h6>
+        </div>
+    </div>
+    <div class="use-modal">
+        <div class="inner-modal close"></div>
+        <div class="content">
+            <div class="content-inner">
+                <div class="content-inner-top">
+                </div>
+                <div class="content-inner-bottom">
+                    <form action="">
+                        <input class="cycle-number" type="text" placeholder="请输入四位车牌号">
+                        <span class="hint">&nbsp;</span>
+                        <input class="sub" type="button" value="开锁">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="side">
+        <div class="side-side"></div>
+        <div class="side-nav">
+            <div class="side-info">
+                <div class="side-headimg">
+                    <img src="images/1.jpeg" alt="">
+                </div>
+                <div class="side-accountnumber">
+                    <p class="number"></p>
+                    <p class="hidenumber"></p>
+                </div>
+            </div>
+            <ul class="side-list">
+                <a class="nav1" href="money.html"><li>我的钱包</li></a>
+                <!--<li><a class="nav2">我的优惠</a></li>-->
+                <a class="nav3"  href="schedule.html"><li>我的行程</li></a>
+                <a class="nav4" href="use.html"><li>使用指南</li></a>
+                <a class="nav5" href="about.html"><li>关于</li></a>
+            </ul>
+            <div class="side-footer">
+                <button class="exit">退出登录</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/fontsizeset.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://api.map.baidu.com/api?v=2.0&ak=u8IChcBNOPYnjMe9Hf0A2vhrvMg3MVjj"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/convertor.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/zepto-touch.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/frames/fx_method.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="scripts/head.js"></script>
+</body>
+</html>
